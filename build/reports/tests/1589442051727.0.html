@@ -1,0 +1,1050 @@
+<html lang="en" ng-app="miniSPA" ng-strict-di="" class="k-webkit k-webkit81 ng-scope" style="height: 100%;"><head><style type="text/css">[uib-typeahead-popup].dropdown-menu{display:block;}</style><style type="text/css">.uib-time input{width:50px;}</style><style type="text/css">[uib-tooltip-popup].tooltip.top-left > .tooltip-arrow,[uib-tooltip-popup].tooltip.top-right > .tooltip-arrow,[uib-tooltip-popup].tooltip.bottom-left > .tooltip-arrow,[uib-tooltip-popup].tooltip.bottom-right > .tooltip-arrow,[uib-tooltip-popup].tooltip.left-top > .tooltip-arrow,[uib-tooltip-popup].tooltip.left-bottom > .tooltip-arrow,[uib-tooltip-popup].tooltip.right-top > .tooltip-arrow,[uib-tooltip-popup].tooltip.right-bottom > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.top-left > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.top-right > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.bottom-left > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.bottom-right > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.left-top > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.left-bottom > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.right-top > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.right-bottom > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.top-left > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.top-right > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.bottom-left > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.bottom-right > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.left-top > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.left-bottom > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.right-top > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.right-bottom > .tooltip-arrow,[uib-popover-popup].popover.top-left > .arrow,[uib-popover-popup].popover.top-right > .arrow,[uib-popover-popup].popover.bottom-left > .arrow,[uib-popover-popup].popover.bottom-right > .arrow,[uib-popover-popup].popover.left-top > .arrow,[uib-popover-popup].popover.left-bottom > .arrow,[uib-popover-popup].popover.right-top > .arrow,[uib-popover-popup].popover.right-bottom > .arrow,[uib-popover-html-popup].popover.top-left > .arrow,[uib-popover-html-popup].popover.top-right > .arrow,[uib-popover-html-popup].popover.bottom-left > .arrow,[uib-popover-html-popup].popover.bottom-right > .arrow,[uib-popover-html-popup].popover.left-top > .arrow,[uib-popover-html-popup].popover.left-bottom > .arrow,[uib-popover-html-popup].popover.right-top > .arrow,[uib-popover-html-popup].popover.right-bottom > .arrow,[uib-popover-template-popup].popover.top-left > .arrow,[uib-popover-template-popup].popover.top-right > .arrow,[uib-popover-template-popup].popover.bottom-left > .arrow,[uib-popover-template-popup].popover.bottom-right > .arrow,[uib-popover-template-popup].popover.left-top > .arrow,[uib-popover-template-popup].popover.left-bottom > .arrow,[uib-popover-template-popup].popover.right-top > .arrow,[uib-popover-template-popup].popover.right-bottom > .arrow{top:auto;bottom:auto;left:auto;right:auto;margin:0;}[uib-popover-popup].popover,[uib-popover-html-popup].popover,[uib-popover-template-popup].popover{display:block !important;}</style><style type="text/css">.uib-datepicker-popup.dropdown-menu{display:block;float:none;margin:0;}.uib-button-bar{padding:10px 9px 2px;}</style><style type="text/css">.uib-position-measure{display:block !important;visibility:hidden !important;position:absolute !important;top:-9999px !important;left:-9999px !important;}.uib-position-scrollbar-measure{position:absolute !important;top:-9999px !important;width:50px !important;height:50px !important;overflow:scroll !important;}.uib-position-body-scrollbar-measure{overflow:scroll !important;}</style><style type="text/css">.uib-datepicker .uib-title{width:100%;}.uib-day button,.uib-month button,.uib-year button{min-width:100%;}.uib-left,.uib-right{width:100%}</style><style type="text/css">.ng-animate.item:not(.left):not(.right){-webkit-transition:0s ease-in-out left;transition:0s ease-in-out left}</style><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="google-site-verification" content="aS_qUe9hUNWVSTE3auCmF0VonaVONT0_9VoJqSjDXKk">
+    <meta name="robots" content="index,follow">
+
+            <link rel="canonical" href="https://www.monsterworksdemo.com/dashboard/">
+    <title ng-bind="pageTitle" class="ng-binding">My Dashboard | MGS Demo</title>
+    <base href="/">
+
+
+        <script async="" src="//www.google-analytics.com/analytics.js"></script><script src="https://core.ui.lexus.monster.com/cdn-release/unstable/lib/lib.min.js?v=2020.8.0.6"></script>
+        <script src="https://core.ui.lexus.monster.com/cdn-release/unstable/lib/core.min.js?v=2020.8.0.6"></script>
+
+    <script src="//kendo.cdn.telerik.com/2018.3.1017/js/kendo.all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-fracs/1.0.1/jquery.fracs.min.js"></script>
+
+            <script src="/dist/scripts.min.js?v=f20aeb0e415374bc3bafa7ba488ab340"></script>
+
+    
+<script src="/dist/ui/Dashboard.min.js?v=6d5e006fa0408b2fb07865de9ebe9b91"></script>
+
+
+                <script src="/Dist/channels/core.min.js?v=fxYRRkyS41Ppcc2sso1esAtp9b4%3d"></script>
+                <script src="/Dist/channels/lexusdemo.min.js?v=a5KAhAgJrdrxh%2bfo0lPg0p9HQ%2bc%3d"></script>
+
+
+    <!--                                                                  ________________      -->
+    <!-- ________________________________________________________________/  Channelized   \_____-->
+    <!-- Styles and Product Configuration -->
+    <!--<link rel="stylesheet" href='//fonts.googleapis.com/icon?family=Material+Icons' />-->
+    <link ng-href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link ng-href="https://fonts.googleapis.com/css?family=Lato:100,300,400" rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:100,300,400">
+
+        <link rel="stylesheet" type="text/css" href="/dist/styles/kendo-web-lexusdemo.min.css?v=c35339c3246ff591bf75565ee7b266ae">
+
+        <link rel="stylesheet" type="text/css" href="/dist/styles/lexusdemo.min.css?v=c35339c3246ff591bf75565ee7b266ae">
+
+    <script>
+        if (typeof angular === 'undefined') {
+            window.location = '/fatalerror';
+        }
+        (function (angular) {
+            // override the context service
+            "use strict";
+            angular.module('globalApp').service('contextService', ['registry', function(registry) {
+                return {
+                    init: function() {
+                        registry.set('global','context', {"ChannelID":10338,"CountryID":164,"ApplicationID":"Lexus","ChannelAlias":"LEXUSDEMO","ChannelAliases":["CORE","CORE-EN","US-EN","CS-USEN","LEXUSCORE","LEXUSDEMO"],"EnvironmentType":"Production","Version":"2020.8.0.6","UIConfiguration":"Release","cdnUrl":"https://core.ui.lexus.monster.com/cdn-release/unstable","templateUrl":"https://core.ui.lexus.monster.com/uiCore/templates/","Domain":"www.monsterworksdemo.com","ServiceUrl":"services.lexus.monster.com"}, 'localStorage');
+                    }
+                };
+            }]);
+        })(angular);
+    </script>
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://securemedia.newjobs.com/id/mgs/10338/favicon.ico">
+<link type="text/css" rel="stylesheet" charset="UTF-8" href="https://translate.googleapis.com/translate_static/css/translateelement.css"><script type="text/javascript" charset="UTF-8" src="https://translate.googleapis.com/translate_static/js/element/main_pl.js"></script><script type="text/javascript" charset="UTF-8" src="https://translate.googleapis.com/element/TE_20200210_00/e/js/element/element_main.js"></script><meta name="description" content="Log in "></head>
+<!--                                                                  ________________      -->
+<!-- ________________________________________________________________/   HTML Body    \_____-->
+<body ng-class="{'side-menu-on':sideMenu.open, 'side-search-on': search.open}" style="position: relative; min-height: 100%; top: 0px;">
+    <!-- ngIf: $root.registry.localStore.global.context.ChannelAlias === 'MGSMIL' -->
+
+    <div class="visible-xs-block">
+        <!-- ngInclude: --><ng-include src="'/UI/shared/search-panel.html'" class="ng-scope"><!-- ngIf: configLayout.lexusShowSearchBarInHeader.lookUpConfig.value == 'false' --></ng-include>
+    </div>
+
+
+    <div class="body-inner" ng-init="sideMenu = {}" ng-class="{'shift-body-wrapper': sideMenu.open, 'shift-body-wrapper-left': search.open}">
+        <a href="" tabindex="0" ng-click="$root.gotoAnchor('main-content')" class="sr-only">Skip to main content</a>
+        <a href="" tabindex="0" ng-click="$root.gotoAnchor('main-navigation')" class="sr-only">Skip to navigation</a>
+
+        <!-- sitewide alert banner -->
+        <!-- ngIf: $root.msg(347957) && $root.registry.localStore.global.context.ChannelAlias !== 'MGSMIL' -->
+
+        <div ng-class="{'container': $root.registry.localStore.global.context.ChannelAlias !== 'MGSMIL'}" class="container">
+
+            <!-- cms Edit Bar -->
+            <!-- ngIf: registry.localStore.global.cmsEditMode == true -->
+
+            <!-- header -->
+            <!-- ngIf: configLayout.header.show.lookUpConfig.value --><!-- ngInclude: --><ng-include src="configLayout.header.url.lookUpConfig.value" ng-if="configLayout.header.show.lookUpConfig.value" class="ng-scope"><!-- ngIf: productVariables.EnvironmentType!=='Production' -->
+
+<section class="main-header row no-gutter-clean ng-scope" ng-controller="LoginController">
+    <div class="flex-justified">
+        <div class="flex-item visible-xs-inline-block">
+            <button type="button" class="menu-toggle navbar-toggle" ng-click="$root.isSearchCollapsed = true; menuToggle();" tabindex="0">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <div class="flex-item flex-center">
+            <div class="logo">
+                <a href="/" tabindex="0">
+                    <img class="hidden-xs" ng-src="https://securemedia.newjobs.com/id/mgs/10338/logo-mgs-dt.png" alt="Site Logo:" src="https://securemedia.newjobs.com/id/mgs/10338/logo-mgs-dt.png">
+                    <!-- ngIf: meta.logo2.src -->
+                    <img class="visible-xs-block" ng-src="https://securemedia.newjobs.com/id/mgs/10338/logo-mgs-mob.png" alt="Site Logo:" src="https://securemedia.newjobs.com/id/mgs/10338/logo-mgs-mob.png">
+                </a>
+            </div>
+            <!-- ngIf: configLayout.enableLogoMessage.lookUpConfig.value == 'true' -->
+        </div>
+        <!-- ngIf: configLayout.lexusShowSearchBarInHeader.lookUpConfig.value == 'true' --><div class="flex-item flex-center ng-scope" id="header-search" ng-if="configLayout.lexusShowSearchBarInHeader.lookUpConfig.value == 'true'" style="">
+
+            <section class="lexus-header-search ng-scope" ng-controller="SearchPanelController" ng-class="{'main-search-on' : !$root.isSearchCollapsed}" ng-init="$root.isSearchCollapsed = true">
+                <!-- ngIf: $root.registry.localStore.global.context.ChannelAlias === 'MGSMIL' -->
+                <form role="search" class="ng-pristine ng-valid ng-valid-is-uneque ng-valid-maxlength">
+                    <div>
+                        <div class="search-boxes">
+                            <div class="mb-sm-half-gutter">
+                                <ocs-autocomplete meta="meta.keywordsMeta" aria-label="Keywords" model="keywords" search-string="$root.search.keywords" remote-api-handler="keywordHandler" remote-response-formatter="keywordFormatter" input-class="form-control input-sm input-header autofocusTrue" on-enter-click="performSearch()" custom-id="searchPanelKeywords_484461" class="ng-isolate-scope"><ng-form name="singleItemForm" novalidate="" class="ng-pristine ng-valid ng-valid-is-uneque ng-valid-maxlength">
+    <div class="form-group" ng-class="{'has-error': !(singleItemForm.$pristine || singleItemForm.$valid)}">
+        <label ng-show="meta.label.lookUpMsg.value" for="searchPanelKeywords_484461_value" class="ng-hide ng-binding">
+            <span class="ng-hide ng-binding">
+                Title, keyword, skill
+            </span>
+            <span ng-show="" class="ng-hide">
+                <small class="fa fa-asterisk required-asterisk"></small>
+            </span>
+            
+        </label>
+        <br ng-show="meta.label.lookUpMsg.value" class="ng-hide">
+        <angucomplete-alt id="searchPanelKeywords_484461" placeholder="Title, keyword, skill" pause="100" selected-object="model" local-data="meta.items" search-fields="" title-field="text" remote-api-handler="remoteApiHandler" remote-url-response-formatter="remoteResponseFormatter" input-changed="inputChanged" minlength="2" validation-mode="meta.validationMode" required="meta.required" custom-validator-names="meta.customValidatorNames" custom-validator-states="customValidatorStates" field-required-class="required" ng-disabled="meta.disabled" input-class="form-control input-sm input-header autofocusTrue" input-name="searchPanelKeywords_484461" initial-value="initialValue" override-suggestions="meta.overrideSuggestions" match-class="highlight" class="ng-isolate-scope"><div class="angucomplete-holder" ng-class="{'angucomplete-dropdown-visible': showDropdown}">  <input id="searchPanelKeywords_484461_value" name="searchPanelKeywords_484461" ng-class="{'angucomplete-input-not-empty': notEmpty}" ng-model="searchStr" ng-disabled="disableInput" type="text" placeholder="Title, keyword, skill" aria-label="Title, keyword, skill" maxlength="524288" ng-focus="onFocusHandler()" class="form-control input-sm input-header autofocusTrue" ng-blur="hideResults($event)" autocapitalize="off" autocorrect="off" autocomplete="off" role="combobox" ng-change="inputChangeHandler(searchStr)">  <div id="searchPanelKeywords_484461_dropdown" class="angucomplete-dropdown ng-hide" ng-show="showDropdown">    <div class="angucomplete-searching ng-binding ng-hide" ng-show="searching" ng-bind="textSearching">Searching...</div>    <div class="angucomplete-searching ng-binding" ng-show="!searching &amp;&amp; (!results || results.length == 0)" ng-bind="textNoResults">No results found</div>    <!-- ngRepeat: result in results -->  </div></div></angucomplete-alt>
+
+        <!-- field level validation -->
+        <span class="error-message ng-hide" ng-show="singleItemForm.$dirty &amp;&amp; singleItemForm.$invalid">
+            <ng-container ng-show="singleItemForm.$error.required" class="ng-hide">
+                <span class="ng-binding" aria-hidden="true">
+                    
+                </span>
+                <span class="sr-only ng-binding">
+                    
+                </span>
+            </ng-container>
+            <!-- ngRepeat: item in meta.customValidatorNames -->
+            <!-- uneque value validation -->
+            <span ng-show="singleItemForm.$error.isUneque" class="ng-hide">
+                <span class="ng-binding"></span>
+            </span>
+        </span>
+    </div>
+</ng-form>
+</ocs-autocomplete>
+                           <!--     <label for="keywords" class="sr-only"></label> -->
+                            </div>
+                            <div>
+                                <ocs-autocomplete meta="meta.locationMeta" aria-label="Location" model="location" search-string="$root.search.location" remote-api-handler="locationHandler" remote-response-formatter="locationFormatter" input-class="form-control input-sm input-header" on-enter-click="performSearch()" custom-id="searchPanelLocation_484461" class="ng-isolate-scope"><ng-form name="singleItemForm" novalidate="" class="ng-pristine ng-valid ng-valid-is-uneque ng-valid-maxlength">
+    <div class="form-group" ng-class="{'has-error': !(singleItemForm.$pristine || singleItemForm.$valid)}">
+        <label ng-show="meta.label.lookUpMsg.value" for="searchPanelLocation_484461_value" class="ng-hide ng-binding">
+            <span class="ng-hide ng-binding">
+                Location
+            </span>
+            <span ng-show="" class="ng-hide">
+                <small class="fa fa-asterisk required-asterisk"></small>
+            </span>
+            
+        </label>
+        <br ng-show="meta.label.lookUpMsg.value" class="ng-hide">
+        <angucomplete-alt id="searchPanelLocation_484461" placeholder="Location" pause="100" selected-object="model" local-data="meta.items" search-fields="" title-field="text" remote-api-handler="remoteApiHandler" remote-url-response-formatter="remoteResponseFormatter" input-changed="inputChanged" minlength="2" validation-mode="meta.validationMode" required="meta.required" custom-validator-names="meta.customValidatorNames" custom-validator-states="customValidatorStates" field-required-class="required" ng-disabled="meta.disabled" input-class="form-control input-sm input-header" input-name="searchPanelLocation_484461" initial-value="initialValue" override-suggestions="meta.overrideSuggestions" match-class="highlight" class="ng-isolate-scope"><div class="angucomplete-holder" ng-class="{'angucomplete-dropdown-visible': showDropdown}">  <input id="searchPanelLocation_484461_value" name="searchPanelLocation_484461" ng-class="{'angucomplete-input-not-empty': notEmpty}" ng-model="searchStr" ng-disabled="disableInput" type="text" placeholder="Location" aria-label="Location" maxlength="524288" ng-focus="onFocusHandler()" class="form-control input-sm input-header" ng-blur="hideResults($event)" autocapitalize="off" autocorrect="off" autocomplete="off" role="combobox" ng-change="inputChangeHandler(searchStr)">  <div id="searchPanelLocation_484461_dropdown" class="angucomplete-dropdown ng-hide" ng-show="showDropdown">    <div class="angucomplete-searching ng-binding ng-hide" ng-show="searching" ng-bind="textSearching">Searching...</div>    <div class="angucomplete-searching ng-binding" ng-show="!searching &amp;&amp; (!results || results.length == 0)" ng-bind="textNoResults">No results found</div>    <!-- ngRepeat: result in results -->  </div></div></angucomplete-alt>
+
+        <!-- field level validation -->
+        <span class="error-message ng-hide" ng-show="singleItemForm.$dirty &amp;&amp; singleItemForm.$invalid">
+            <ng-container ng-show="singleItemForm.$error.required" class="ng-hide">
+                <span class="ng-binding" aria-hidden="true">
+                    
+                </span>
+                <span class="sr-only ng-binding">
+                    
+                </span>
+            </ng-container>
+            <!-- ngRepeat: item in meta.customValidatorNames -->
+            <!-- uneque value validation -->
+            <span ng-show="singleItemForm.$error.isUneque" class="ng-hide">
+                <span class="ng-binding"></span>
+            </span>
+        </span>
+    </div>
+</ng-form>
+</ocs-autocomplete>
+                            </div>
+                            <div>
+                                <button type="submit" id="search-jobs" class="btn btn-primary btn-sm btn-wide" ng-click="performSearch()" aria-label="Search jobs">
+                                    <span class="ng-binding">Search jobs</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <ocs-recent-searches view-type="mobile" class="ng-isolate-scope"><!-- ngIf: $ctrl.recentSearchesEnabled === 'true' && $ctrl.itemsSource -->
+</ocs-recent-searches>
+                    </div>
+                </form>
+            </section>
+
+        </div><!-- end ngIf: configLayout.lexusShowSearchBarInHeader.lookUpConfig.value == 'true' -->
+
+        <div class="">
+            <div class="users">
+                <div class="login-boxes" id="dropdown-scrollable-container">
+                    <div class="box">
+                        <div class="hidden-xs hidden-sm" ng-show="isChooseLanguageEnabled()">
+                                
+                            <div class="options text-right">
+                                    <!-- ngIf: configLayout.enablePoweredBy.lookUpConfig.value == 'true' -->
+                                <!-- ngIf: configLayout.enableAccessibilityDropdown.lookUpConfig.value == 'true' -->
+                                <div class="languages" id="google_translate_element"><div class="skiptranslate goog-te-gadget" dir="ltr" style=""><div id=":0.targetLanguage"><select class="goog-te-combo" aria-label="Widżet języka Tłumacza" aria-describedby="sr_selected_lang"><option value="">Wybierz język</option><option value="pl">polski</option><option value="af">afrikaans</option><option value="sq">albański</option><option value="am">amharski</option><option value="ar">arabski</option><option value="az">azerski</option><option value="eu">baskijski</option><option value="bn">bengalski</option><option value="be">białoruski</option><option value="my">birmański</option><option value="bs">bośniacki</option><option value="bg">bułgarski</option><option value="ceb">cebuański</option><option value="zh-TW">chiński (tradycyjny)</option><option value="zh-CN">chiński (uproszczony)</option><option value="hr">chorwacki</option><option value="cs">czeski</option><option value="ny">cziczewa</option><option value="da">duński</option><option value="eo">esperanto</option><option value="et">estoński</option><option value="tl">filipiński</option><option value="fi">fiński</option><option value="fr">francuski</option><option value="fy">fryzyjski</option><option value="gl">galicyjski</option><option value="el">grecki</option><option value="ka">gruziński</option><option value="gu">gudżarati</option><option value="ha">hausa</option><option value="haw">hawajski</option><option value="iw">hebrajski</option><option value="hi">hindi</option><option value="es">hiszpański</option><option value="hmn">hmong</option><option value="ig">igbo</option><option value="id">indonezyjski</option><option value="ga">irlandzki</option><option value="is">islandzki</option><option value="ja">japoński</option><option value="jw">jawajski</option><option value="yi">jidysz</option><option value="yo">joruba</option><option value="kn">kannada</option><option value="ca">kataloński</option><option value="kk">kazachski</option><option value="km">khmerski</option><option value="ky">kirgiski</option><option value="ko">koreański</option><option value="co">korsykański</option><option value="ht">kreolski (Haiti)</option><option value="ku">kurdyjski</option><option value="lo">laotański</option><option value="lt">litewski</option><option value="lb">luksemburski</option><option value="la">łaciński</option><option value="lv">łotewski</option><option value="mk">macedoński</option><option value="ml">malajalam</option><option value="ms">malajski</option><option value="mg">malgaski</option><option value="mt">maltański</option><option value="mi">maori</option><option value="mr">marathi</option><option value="mn">mongolski</option><option value="ne">nepalski</option><option value="nl">niderlandzki</option><option value="de">niemiecki</option><option value="no">norweski</option><option value="or">Orija</option><option value="hy">ormiański</option><option value="ps">paszto</option><option value="pa">pendżabski</option><option value="fa">perski</option><option value="pt">portugalski</option><option value="ru">rosyjski</option><option value="rw">ruanda-rundi</option><option value="ro">rumuński</option><option value="sm">samoański</option><option value="sr">serbski</option><option value="sn">shona</option><option value="sd">sindhi</option><option value="sk">słowacki</option><option value="sl">słoweński</option><option value="so">somalijski</option><option value="st">sotho</option><option value="sw">suahili</option><option value="su">sundajski</option><option value="si">syngaleski</option><option value="gd">szkocki gaelicki</option><option value="sv">szwedzki</option><option value="tg">tadżycki</option><option value="th">tajski</option><option value="ta">tamilski</option><option value="tt">tatarski</option><option value="te">telugu</option><option value="tr">turecki</option><option value="tk">turkmeński</option><option value="ug">ujgurski</option><option value="uk">ukraiński</option><option value="ur">urdu</option><option value="uz">uzbecki</option><option value="cy">walijski</option><option value="hu">węgierski</option><option value="vi">wietnamski</option><option value="it">włoski</option><option value="xh">xhosa</option><option value="zu">zulu</option></select></div>Technologia <span style="white-space:nowrap"><a class="goog-logo-link" href="https://translate.google.com" target="_blank"><img src="https://www.gstatic.com/images/branding/googlelogo/1x/googlelogo_color_42x16dp.png" width="37px" height="14px" style="padding-right: 3px" alt="Google Tłumacz">Tłumacz</a></span></div><span class="sr-only" id="sr_selected_lang"></span></div>
+                                <script type="text/javascript">
+                                    var elem = 'google_translate_element';
+                                    function googleTranslateElementInit() {
+                                        new google.translate.TranslateElement({
+                                            pageLanguage: 'en'
+                                        }, elem);
+                                        changeLook();
+                                    }
+                                    function changeLook() {
+                                        $('#goog-gt-tt').remove();
+                                        var $elem = $('#' + elem);
+                                        $elem.append('<span class="sr-only" id="sr_selected_lang"></span>');
+                                        var $select = $elem.find('select');
+                                        var $sr_lang = $('#sr_selected_lang');
+                                        $select.attr('aria-describedby', 'sr_selected_lang');
+                                        $select.on('change', function(){
+                                            $sr_lang.html($select.find('option:selected').text());
+                                        });
+                                    }
+                                </script>
+                                <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                            </div>
+                           
+                        </div>
+                        <div class="visible-xs-inline-block">
+                            <div class="btn user-button" role="search" ng-click="$root.navIsCollapsed = true; $root.isSearchCollapsed = !$root.isSearchCollapsed; this.isCollapsed = true;">
+                                <span class="sr-only">Toggle search</span>
+                                <i class="glyphicon glyphicon-search fa-search"></i>
+                                Search
+                            </div>
+                        </div>
+                        <!-- ngIf: isAccountsEnabled() --><div class="box-content ng-scope dropdown ng-hide" ng-hide="isAuthenticated()" ng-if="isAccountsEnabled()" role="form" uib-dropdown="" uib-keyboard-nav="" auto-close="outsideClick" is-open="$root.login.boxOpen" on-toggle="loginBoxToggle($event)">
+                            <a href="" class="btn user-button ng-binding" role="button" ng-click="showLoginModal()">
+                                <i class="glyphicon glyphicon-user"></i>
+                                Sign in
+                            </a>
+                            <!-- MGSOCSPP-4001-->
+                            <!--<div uib-dropdown-menu role="menu">
+                                <ng-form name="loginForm">
+                                    <ng-include src="'/UI/shared/login.html'"></ng-include>
+                                </ng-form>
+                            </div>-->
+                        </div><!-- end ngIf: isAccountsEnabled() -->
+                        <!-- ngIf: isAccountsEnabled() --><div class="box-content ng-scope dropdown" uib-dropdown="" keyboard-nav="" ng-show="isAuthenticated()" ng-if="isAccountsEnabled()">
+                            <a href="" class="btn user-button ng-binding dropdown-toggle" uib-dropdown-toggle="" ng-keydown="profileKeydown($event)" role="button" aria-haspopup="true" aria-expanded="false">
+                                <i class="glyphicon glyphicon-user"></i>
+                                Profile <span class="caret"></span>
+                            </a>
+                            <ul uib-dropdown-menu="" role="menu" class="dropdown-menu">
+                                <li ng-show="getFullName()" class="ng-hide">
+                                    <span class="username ng-binding">
+                                        false
+                                    </span>
+                                </li>
+                                <!-- ngIf: configLayout.enableCalendarLink.lookUpConfig.value == 'true' --><li ng-if="configLayout.enableCalendarLink.lookUpConfig.value == 'true'" class="ng-scope" style=""><a href="/calendar/" aria-label="My Calendar" class="ng-binding">My Calendar</a></li><!-- end ngIf: configLayout.enableCalendarLink.lookUpConfig.value == 'true' -->
+                                <li><a href="/account/" aria-label="Edit Profile" class="ng-binding">Edit Profile</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="" ng-click="logout()" aria-label="Logout" class="ng-binding">Logout</a></li>
+                            </ul>
+                        </div><!-- end ngIf: isAccountsEnabled() -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Nav Bar -->
+    <!-- ngIf: configLayout.menuBar.show.lookUpConfig.value --><!-- ngInclude: --><ng-include src="configLayout.menuBar.url.lookUpConfig.value" ng-if="configLayout.menuBar.show.lookUpConfig.value" class="ng-scope"><ocs-navbar meta="meta.nav1" template-name="ocs-navbar" class="ng-scope ng-isolate-scope"><nav class="navbar navbar-inverse" ng-class="{'navbar-inverse': !defaults.removeInverse }" role="navigation" id="main-navigation">
+    
+    <div class="navbar-collapse mobile-navbar" ng-class="{'mobile-navbar-on': !$root.navIsCollapsed }" aria-live="assertive">
+        <ul class="nav navbar-nav">
+            <!-- ngRepeat: (key, item) in meta track by $index --><li ng-repeat="(key, item) in meta track by $index" uib-dropdown="" keyboard-nav="" is-open="status.isopen" ng-class="{'open': status.isopen}" ng-mouseenter="open(this)" ng-mouseleave="close(this)" ng-click="toggle(this, $index)" class="ng-scope dropdown" style="">
+                <!-- ngIf: item.url --><a ng-if="item.url" href="/dashboard/" id="dropdown-Home" tabindex="0" target="" class="ng-scope">
+                    <!-- ngIf: item.icon --><span ng-if="item.icon" class="ng-scope">
+                        <span ng-class="::item.icon" class="fa fa-home"></span>
+                        <span ng-class="{'sr-only': item.icon}" class="ng-binding sr-only">Home</span>
+                    </span><!-- end ngIf: item.icon -->
+                    <!-- ngIf: !item.icon && item.url -->
+                </a><!-- end ngIf: item.url -->
+
+                <!-- ngIf: !item.icon && !item.url -->
+
+                <!-- ngIf: item.submenu -->
+            </li><!-- end ngRepeat: (key, item) in meta track by $index --><li ng-repeat="(key, item) in meta track by $index" uib-dropdown="" keyboard-nav="" is-open="status.isopen" ng-class="{'open': status.isopen}" ng-mouseenter="open(this)" ng-mouseleave="close(this)" ng-click="toggle(this, $index)" class="ng-scope dropdown">
+                <!-- ngIf: item.url -->
+
+                <!-- ngIf: !item.icon && !item.url --><a href="" ng-if="!item.icon &amp;&amp; !item.url" uib-dropdown-toggle="" id="dropdown-My-Job-Search" tabindex="0" ng-keydown="keydown($event, this)" target="" class="ng-binding ng-scope dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                    My Job Search
+                    <!-- ngIf: !$parent.defaults.removeCarets --><span ng-if="!$parent.defaults.removeCarets" class="ng-scope">
+                        &nbsp;<span class="caret pull-right">
+                            <i class="glyphicon glyphicon-chevron-right"></i>
+                        </span>
+                    </span><!-- end ngIf: !$parent.defaults.removeCarets -->
+                </a><!-- end ngIf: !item.icon && !item.url -->
+
+                <!-- ngIf: item.submenu --><ul submenu-id="1" ng-if="item.submenu" uib-dropdown-menu="" aria-labelledby="dropdown-My-Job-Search" class="ng-scope dropdown-menu">
+                    <!-- ngRepeat: (key, child) in ::item track by $index --><!-- ngIf: (key!='display') && (key!='url') && (key!='icon') && (key!='queryString') && (key!='submenu') --><li ng-repeat="(key, child) in ::item track by $index" ng-if="(key!='display') &amp;&amp; (key!='url') &amp;&amp; (key!='icon') &amp;&amp; (key!='queryString') &amp;&amp; (key!='submenu')" ng-class="{'disabled' : child.disabled}" class="ng-scope">
+                        <a tabindex="0" href="https://browse.monsterworksdemo.com" ng-bind-html="::child.display" target="" class="ng-binding">Browse Jobs</a>
+                    </li><!-- end ngIf: (key!='display') && (key!='url') && (key!='icon') && (key!='queryString') && (key!='submenu') --><!-- end ngRepeat: (key, child) in ::item track by $index --><!-- ngIf: (key!='display') && (key!='url') && (key!='icon') && (key!='queryString') && (key!='submenu') --><li ng-repeat="(key, child) in ::item track by $index" ng-if="(key!='display') &amp;&amp; (key!='url') &amp;&amp; (key!='icon') &amp;&amp; (key!='queryString') &amp;&amp; (key!='submenu')" ng-class="{'disabled' : child.disabled}" class="ng-scope">
+                        <a tabindex="0" href="/resumes/" ng-bind-html="::child.display" target="" class="ng-binding">Resumes</a>
+                    </li><!-- end ngIf: (key!='display') && (key!='url') && (key!='icon') && (key!='queryString') && (key!='submenu') --><!-- end ngRepeat: (key, child) in ::item track by $index --><!-- ngIf: (key!='display') && (key!='url') && (key!='icon') && (key!='queryString') && (key!='submenu') --><li ng-repeat="(key, child) in ::item track by $index" ng-if="(key!='display') &amp;&amp; (key!='url') &amp;&amp; (key!='icon') &amp;&amp; (key!='queryString') &amp;&amp; (key!='submenu')" ng-class="{'disabled' : child.disabled}" class="ng-scope">
+                        <a tabindex="0" href="/CoverLetters/" ng-bind-html="::child.display" target="" class="ng-binding">Cover Letters</a>
+                    </li><!-- end ngIf: (key!='display') && (key!='url') && (key!='icon') && (key!='queryString') && (key!='submenu') --><!-- end ngRepeat: (key, child) in ::item track by $index --><!-- ngIf: (key!='display') && (key!='url') && (key!='icon') && (key!='queryString') && (key!='submenu') --><li ng-repeat="(key, child) in ::item track by $index" ng-if="(key!='display') &amp;&amp; (key!='url') &amp;&amp; (key!='icon') &amp;&amp; (key!='queryString') &amp;&amp; (key!='submenu')" ng-class="{'disabled' : child.disabled}" class="ng-scope">
+                        <a tabindex="0" href="/Documents/" ng-bind-html="::child.display" target="" class="ng-binding">Documents</a>
+                    </li><!-- end ngIf: (key!='display') && (key!='url') && (key!='icon') && (key!='queryString') && (key!='submenu') --><!-- end ngRepeat: (key, child) in ::item track by $index --><!-- ngIf: (key!='display') && (key!='url') && (key!='icon') && (key!='queryString') && (key!='submenu') --><li ng-repeat="(key, child) in ::item track by $index" ng-if="(key!='display') &amp;&amp; (key!='url') &amp;&amp; (key!='icon') &amp;&amp; (key!='queryString') &amp;&amp; (key!='submenu')" ng-class="{'disabled' : child.disabled}" class="ng-scope">
+                        <a tabindex="0" href="/applicationHistory/" ng-bind-html="::child.display" target="" class="ng-binding">Applied Jobs</a>
+                    </li><!-- end ngIf: (key!='display') && (key!='url') && (key!='icon') && (key!='queryString') && (key!='submenu') --><!-- end ngRepeat: (key, child) in ::item track by $index --><!-- ngIf: (key!='display') && (key!='url') && (key!='icon') && (key!='queryString') && (key!='submenu') --><li ng-repeat="(key, child) in ::item track by $index" ng-if="(key!='display') &amp;&amp; (key!='url') &amp;&amp; (key!='icon') &amp;&amp; (key!='queryString') &amp;&amp; (key!='submenu')" ng-class="{'disabled' : child.disabled}" class="ng-scope">
+                        <a tabindex="0" href="/SavedJobs/" ng-bind-html="::child.display" target="" class="ng-binding">Saved Jobs</a>
+                    </li><!-- end ngIf: (key!='display') && (key!='url') && (key!='icon') && (key!='queryString') && (key!='submenu') --><!-- end ngRepeat: (key, child) in ::item track by $index --><!-- ngIf: (key!='display') && (key!='url') && (key!='icon') && (key!='queryString') && (key!='submenu') --><li ng-repeat="(key, child) in ::item track by $index" ng-if="(key!='display') &amp;&amp; (key!='url') &amp;&amp; (key!='icon') &amp;&amp; (key!='queryString') &amp;&amp; (key!='submenu')" ng-class="{'disabled' : child.disabled}" class="ng-scope">
+                        <a tabindex="0" href="/SavedSearches/" ng-bind-html="::child.display" target="" class="ng-binding">Job Alerts</a>
+                    </li><!-- end ngIf: (key!='display') && (key!='url') && (key!='icon') && (key!='queryString') && (key!='submenu') --><!-- end ngRepeat: (key, child) in ::item track by $index --><!-- ngIf: (key!='display') && (key!='url') && (key!='icon') && (key!='queryString') && (key!='submenu') --><!-- end ngRepeat: (key, child) in ::item track by $index --><!-- ngIf: (key!='display') && (key!='url') && (key!='icon') && (key!='queryString') && (key!='submenu') --><!-- end ngRepeat: (key, child) in ::item track by $index -->
+                </ul><!-- end ngIf: item.submenu -->
+            </li><!-- end ngRepeat: (key, item) in meta track by $index --><li ng-repeat="(key, item) in meta track by $index" uib-dropdown="" keyboard-nav="" is-open="status.isopen" ng-class="{'open': status.isopen}" ng-mouseenter="open(this)" ng-mouseleave="close(this)" ng-click="toggle(this, $index)" class="ng-scope dropdown">
+                <!-- ngIf: item.url -->
+
+                <!-- ngIf: !item.icon && !item.url --><a href="" ng-if="!item.icon &amp;&amp; !item.url" uib-dropdown-toggle="" id="dropdown-My-Career-Tools" tabindex="0" ng-keydown="keydown($event, this)" target="" class="ng-binding ng-scope dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                    My Career Tools
+                    <!-- ngIf: !$parent.defaults.removeCarets --><span ng-if="!$parent.defaults.removeCarets" class="ng-scope">
+                        &nbsp;<span class="caret pull-right">
+                            <i class="glyphicon glyphicon-chevron-right"></i>
+                        </span>
+                    </span><!-- end ngIf: !$parent.defaults.removeCarets -->
+                </a><!-- end ngIf: !item.icon && !item.url -->
+
+                <!-- ngIf: item.submenu --><ul submenu-id="2" ng-if="item.submenu" uib-dropdown-menu="" aria-labelledby="dropdown-My-Career-Tools" class="ng-scope dropdown-menu">
+                    <!-- ngRepeat: (key, child) in ::item track by $index --><!-- ngIf: (key!='display') && (key!='url') && (key!='icon') && (key!='queryString') && (key!='submenu') --><li ng-repeat="(key, child) in ::item track by $index" ng-if="(key!='display') &amp;&amp; (key!='url') &amp;&amp; (key!='icon') &amp;&amp; (key!='queryString') &amp;&amp; (key!='submenu')" ng-class="{'disabled' : child.disabled}" class="ng-scope">
+                        <a tabindex="0" href="/programs/" ng-bind-html="::child.display" target="" class="ng-binding">Search Training</a>
+                    </li><!-- end ngIf: (key!='display') && (key!='url') && (key!='icon') && (key!='queryString') && (key!='submenu') --><!-- end ngRepeat: (key, child) in ::item track by $index --><!-- ngIf: (key!='display') && (key!='url') && (key!='icon') && (key!='queryString') && (key!='submenu') --><li ng-repeat="(key, child) in ::item track by $index" ng-if="(key!='display') &amp;&amp; (key!='url') &amp;&amp; (key!='icon') &amp;&amp; (key!='queryString') &amp;&amp; (key!='submenu')" ng-class="{'disabled' : child.disabled}" class="ng-scope">
+                        <a tabindex="0" href="/events/" ng-bind-html="::child.display" target="" class="ng-binding">Workshops/Events</a>
+                    </li><!-- end ngIf: (key!='display') && (key!='url') && (key!='icon') && (key!='queryString') && (key!='submenu') --><!-- end ngRepeat: (key, child) in ::item track by $index --><!-- ngIf: (key!='display') && (key!='url') && (key!='icon') && (key!='queryString') && (key!='submenu') --><li ng-repeat="(key, child) in ::item track by $index" ng-if="(key!='display') &amp;&amp; (key!='url') &amp;&amp; (key!='icon') &amp;&amp; (key!='queryString') &amp;&amp; (key!='submenu')" ng-class="{'disabled' : child.disabled}" class="ng-scope">
+                        <a tabindex="0" href="/calendar/" ng-bind-html="::child.display" target="" class="ng-binding">Calendar</a>
+                    </li><!-- end ngIf: (key!='display') && (key!='url') && (key!='icon') && (key!='queryString') && (key!='submenu') --><!-- end ngRepeat: (key, child) in ::item track by $index --><!-- ngIf: (key!='display') && (key!='url') && (key!='icon') && (key!='queryString') && (key!='submenu') --><li ng-repeat="(key, child) in ::item track by $index" ng-if="(key!='display') &amp;&amp; (key!='url') &amp;&amp; (key!='icon') &amp;&amp; (key!='queryString') &amp;&amp; (key!='submenu')" ng-class="{'disabled' : child.disabled}" class="ng-scope">
+                        <a tabindex="0" href="/occupations/" ng-bind-html="::child.display" target="" class="ng-binding">Occupation Search</a>
+                    </li><!-- end ngIf: (key!='display') && (key!='url') && (key!='icon') && (key!='queryString') && (key!='submenu') --><!-- end ngRepeat: (key, child) in ::item track by $index --><!-- ngIf: (key!='display') && (key!='url') && (key!='icon') && (key!='queryString') && (key!='submenu') --><li ng-repeat="(key, child) in ::item track by $index" ng-if="(key!='display') &amp;&amp; (key!='url') &amp;&amp; (key!='icon') &amp;&amp; (key!='queryString') &amp;&amp; (key!='submenu')" ng-class="{'disabled' : child.disabled}" class="ng-scope">
+                        <a tabindex="0" href="/budgetCalculator/" ng-bind-html="::child.display" target="" class="ng-binding">Budget Calculator</a>
+                    </li><!-- end ngIf: (key!='display') && (key!='url') && (key!='icon') && (key!='queryString') && (key!='submenu') --><!-- end ngRepeat: (key, child) in ::item track by $index --><!-- ngIf: (key!='display') && (key!='url') && (key!='icon') && (key!='queryString') && (key!='submenu') --><li ng-repeat="(key, child) in ::item track by $index" ng-if="(key!='display') &amp;&amp; (key!='url') &amp;&amp; (key!='icon') &amp;&amp; (key!='queryString') &amp;&amp; (key!='submenu')" ng-class="{'disabled' : child.disabled}" class="ng-scope">
+                        <a tabindex="0" href="/careerPersonality/" ng-bind-html="::child.display" target="" class="ng-binding">Career Personality</a>
+                    </li><!-- end ngIf: (key!='display') && (key!='url') && (key!='icon') && (key!='queryString') && (key!='submenu') --><!-- end ngRepeat: (key, child) in ::item track by $index --><!-- ngIf: (key!='display') && (key!='url') && (key!='icon') && (key!='queryString') && (key!='submenu') --><li ng-repeat="(key, child) in ::item track by $index" ng-if="(key!='display') &amp;&amp; (key!='url') &amp;&amp; (key!='icon') &amp;&amp; (key!='queryString') &amp;&amp; (key!='submenu')" ng-class="{'disabled' : child.disabled}" class="ng-scope">
+                        <a tabindex="0" href="/careerPlan/" ng-bind-html="::child.display" target="" class="ng-binding">Career Goals</a>
+                    </li><!-- end ngIf: (key!='display') && (key!='url') && (key!='icon') && (key!='queryString') && (key!='submenu') --><!-- end ngRepeat: (key, child) in ::item track by $index --><!-- ngIf: (key!='display') && (key!='url') && (key!='icon') && (key!='queryString') && (key!='submenu') --><li ng-repeat="(key, child) in ::item track by $index" ng-if="(key!='display') &amp;&amp; (key!='url') &amp;&amp; (key!='icon') &amp;&amp; (key!='queryString') &amp;&amp; (key!='submenu')" ng-class="{'disabled' : child.disabled}" class="ng-scope">
+                        <a tabindex="0" href="/occupations/saved" ng-bind-html="::child.display" target="" class="ng-binding">Saved Occupations</a>
+                    </li><!-- end ngIf: (key!='display') && (key!='url') && (key!='icon') && (key!='queryString') && (key!='submenu') --><!-- end ngRepeat: (key, child) in ::item track by $index --><!-- ngIf: (key!='display') && (key!='url') && (key!='icon') && (key!='queryString') && (key!='submenu') --><li ng-repeat="(key, child) in ::item track by $index" ng-if="(key!='display') &amp;&amp; (key!='url') &amp;&amp; (key!='icon') &amp;&amp; (key!='queryString') &amp;&amp; (key!='submenu')" ng-class="{'disabled' : child.disabled}" class="ng-scope">
+                        <a tabindex="0" href="/schools/" ng-bind-html="::child.display" target="" class="ng-binding">Saved Schools</a>
+                    </li><!-- end ngIf: (key!='display') && (key!='url') && (key!='icon') && (key!='queryString') && (key!='submenu') --><!-- end ngRepeat: (key, child) in ::item track by $index --><!-- ngIf: (key!='display') && (key!='url') && (key!='icon') && (key!='queryString') && (key!='submenu') --><li ng-repeat="(key, child) in ::item track by $index" ng-if="(key!='display') &amp;&amp; (key!='url') &amp;&amp; (key!='icon') &amp;&amp; (key!='queryString') &amp;&amp; (key!='submenu')" ng-class="{'disabled' : child.disabled}" class="ng-scope">
+                        <a tabindex="0" href="/programs/saved" ng-bind-html="::child.display" target="" class="ng-binding">Saved Training</a>
+                    </li><!-- end ngIf: (key!='display') && (key!='url') && (key!='icon') && (key!='queryString') && (key!='submenu') --><!-- end ngRepeat: (key, child) in ::item track by $index --><!-- ngIf: (key!='display') && (key!='url') && (key!='icon') && (key!='queryString') && (key!='submenu') --><!-- end ngRepeat: (key, child) in ::item track by $index --><!-- ngIf: (key!='display') && (key!='url') && (key!='icon') && (key!='queryString') && (key!='submenu') --><!-- end ngRepeat: (key, child) in ::item track by $index -->
+                </ul><!-- end ngIf: item.submenu -->
+            </li><!-- end ngRepeat: (key, item) in meta track by $index --><li ng-repeat="(key, item) in meta track by $index" uib-dropdown="" keyboard-nav="" is-open="status.isopen" ng-class="{'open': status.isopen}" ng-mouseenter="open(this)" ng-mouseleave="close(this)" ng-click="toggle(this, $index)" class="ng-scope dropdown">
+                <!-- ngIf: item.url -->
+
+                <!-- ngIf: !item.icon && !item.url --><a href="" ng-if="!item.icon &amp;&amp; !item.url" uib-dropdown-toggle="" id="dropdown-Resources" tabindex="0" ng-keydown="keydown($event, this)" target="" class="ng-binding ng-scope dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                    Resources
+                    <!-- ngIf: !$parent.defaults.removeCarets --><span ng-if="!$parent.defaults.removeCarets" class="ng-scope">
+                        &nbsp;<span class="caret pull-right">
+                            <i class="glyphicon glyphicon-chevron-right"></i>
+                        </span>
+                    </span><!-- end ngIf: !$parent.defaults.removeCarets -->
+                </a><!-- end ngIf: !item.icon && !item.url -->
+
+                <!-- ngIf: item.submenu --><ul submenu-id="3" ng-if="item.submenu" uib-dropdown-menu="" aria-labelledby="dropdown-Resources" class="ng-scope dropdown-menu">
+                    <!-- ngRepeat: (key, child) in ::item track by $index --><!-- ngIf: (key!='display') && (key!='url') && (key!='icon') && (key!='queryString') && (key!='submenu') --><li ng-repeat="(key, child) in ::item track by $index" ng-if="(key!='display') &amp;&amp; (key!='url') &amp;&amp; (key!='icon') &amp;&amp; (key!='queryString') &amp;&amp; (key!='submenu')" ng-class="{'disabled' : child.disabled}" class="ng-scope">
+                        <a tabindex="0" href="/aboutUs/" ng-bind-html="::child.display" target="" class="ng-binding">About Us</a>
+                    </li><!-- end ngIf: (key!='display') && (key!='url') && (key!='icon') && (key!='queryString') && (key!='submenu') --><!-- end ngRepeat: (key, child) in ::item track by $index --><!-- ngIf: (key!='display') && (key!='url') && (key!='icon') && (key!='queryString') && (key!='submenu') --><li ng-repeat="(key, child) in ::item track by $index" ng-if="(key!='display') &amp;&amp; (key!='url') &amp;&amp; (key!='icon') &amp;&amp; (key!='queryString') &amp;&amp; (key!='submenu')" ng-class="{'disabled' : child.disabled}" class="ng-scope">
+                        <a tabindex="0" href="/ContactUs/" ng-bind-html="::child.display" target="" class="ng-binding">Contact Us</a>
+                    </li><!-- end ngIf: (key!='display') && (key!='url') && (key!='icon') && (key!='queryString') && (key!='submenu') --><!-- end ngRepeat: (key, child) in ::item track by $index --><!-- ngIf: (key!='display') && (key!='url') && (key!='icon') && (key!='queryString') && (key!='submenu') --><li ng-repeat="(key, child) in ::item track by $index" ng-if="(key!='display') &amp;&amp; (key!='url') &amp;&amp; (key!='icon') &amp;&amp; (key!='queryString') &amp;&amp; (key!='submenu')" ng-class="{'disabled' : child.disabled}" class="ng-scope">
+                        <a tabindex="0" href="http://career-advice.monster.com/" ng-bind-html="::child.display" target="_blank" class="ng-binding">Career advice</a>
+                    </li><!-- end ngIf: (key!='display') && (key!='url') && (key!='icon') && (key!='queryString') && (key!='submenu') --><!-- end ngRepeat: (key, child) in ::item track by $index --><!-- ngIf: (key!='display') && (key!='url') && (key!='icon') && (key!='queryString') && (key!='submenu') --><li ng-repeat="(key, child) in ::item track by $index" ng-if="(key!='display') &amp;&amp; (key!='url') &amp;&amp; (key!='icon') &amp;&amp; (key!='queryString') &amp;&amp; (key!='submenu')" ng-class="{'disabled' : child.disabled}" class="ng-scope">
+                        <a tabindex="0" href="/microSiteCms/?appid=MGSVET&amp;pagetype=simple&amp;seo=landingpage" ng-bind-html="::child.display" target="" class="ng-binding">Veterans</a>
+                    </li><!-- end ngIf: (key!='display') && (key!='url') && (key!='icon') && (key!='queryString') && (key!='submenu') --><!-- end ngRepeat: (key, child) in ::item track by $index --><!-- ngIf: (key!='display') && (key!='url') && (key!='icon') && (key!='queryString') && (key!='submenu') --><li ng-repeat="(key, child) in ::item track by $index" ng-if="(key!='display') &amp;&amp; (key!='url') &amp;&amp; (key!='icon') &amp;&amp; (key!='queryString') &amp;&amp; (key!='submenu')" ng-class="{'disabled' : child.disabled}" class="ng-scope">
+                        <a tabindex="0" href="/microSiteCms/?appid=MGSYOUTH&amp;pagetype=simple&amp;seo=wioayouth" ng-bind-html="::child.display" target="" class="ng-binding">Youth</a>
+                    </li><!-- end ngIf: (key!='display') && (key!='url') && (key!='icon') && (key!='queryString') && (key!='submenu') --><!-- end ngRepeat: (key, child) in ::item track by $index --><!-- ngIf: (key!='display') && (key!='url') && (key!='icon') && (key!='queryString') && (key!='submenu') --><li ng-repeat="(key, child) in ::item track by $index" ng-if="(key!='display') &amp;&amp; (key!='url') &amp;&amp; (key!='icon') &amp;&amp; (key!='queryString') &amp;&amp; (key!='submenu')" ng-class="{'disabled' : child.disabled}" class="ng-scope">
+                        <a tabindex="0" href="/taa/" ng-bind-html="::child.display" target="" class="ng-binding">TAA (beta)</a>
+                    </li><!-- end ngIf: (key!='display') && (key!='url') && (key!='icon') && (key!='queryString') && (key!='submenu') --><!-- end ngRepeat: (key, child) in ::item track by $index --><!-- ngIf: (key!='display') && (key!='url') && (key!='icon') && (key!='queryString') && (key!='submenu') --><!-- end ngRepeat: (key, child) in ::item track by $index --><!-- ngIf: (key!='display') && (key!='url') && (key!='icon') && (key!='queryString') && (key!='submenu') --><!-- end ngRepeat: (key, child) in ::item track by $index -->
+                </ul><!-- end ngIf: item.submenu -->
+            </li><!-- end ngRepeat: (key, item) in meta track by $index -->
+        </ul>
+    </div>
+</nav>
+</ocs-navbar></ng-include><!-- end ngIf: configLayout.menuBar.show.lookUpConfig.value -->
+</section>
+</ng-include><!-- end ngIf: configLayout.header.show.lookUpConfig.value -->
+
+            
+
+            <!-- ngIf: configLayout.header2.show.lookUpConfig.value -->
+			<!-- mgsmil jobview ad-->
+			<!-- ngIf: $root.registry.localStore.global.context.ChannelAlias === 'MGSMIL' && configLayout.showJobviewAd && configLayout.isJobviewPage -->
+        </div>
+        <div id="search-panel" class="container hidden-xs">
+            <!-- Search Bar -->
+            <!-- ngInclude: --><ng-include src="'/UI/shared/search-panel.html'" class="ng-scope"><!-- ngIf: configLayout.lexusShowSearchBarInHeader.lookUpConfig.value == 'false' --></ng-include>
+        </div>
+
+
+        <div class="body-wrapper">
+            <ocs-alert class="ng-isolate-scope"><section class="alert-panel ng-binding ng-hide" aria-role="alert" ng-show="$root.impersonation.isImpersonating" ng-bind-html="impersonationAlert">Currently using the following account: <strong>{0}</strong></section></ocs-alert>
+
+            <div class="container">
+                <!-- this is the 404 and 401 error message-->
+                <!-- ngIf: $root.topErrorList.length -->
+
+                <!-- ngIf: !$root.topErrorList.length --><div ng-if="!$root.topErrorList.length" class="ng-scope">
+
+                    <!-- Apply flow check -->
+                    <ocs-apply-notify meta="meta.jobApply" class="ng-isolate-scope"><!-- ngIf: show --></ocs-apply-notify>
+
+                    <!-- in page errors -->
+                    <ocs-page-errors error-list="$root.topMasterErrors" class="ng-isolate-scope"><div>
+    <!-- ngIf: errorList.length > 0 -->
+</div></ocs-page-errors>
+
+                    <!-- Content -->
+                    <div class="row">
+                        <div class="col-lg-12 content-wrapper" id="main-content">
+
+                            <!-- ngIf: !meta.breadCrumbExtended.disable -->
+                            <div ocs-spinner="" is-loaded="$root.isLoaded" options="{top: '100px', minHeight: '300px'}" class="ng-isolate-scope" style="position: relative; min-height: 300px;"><div class="spinner" style="top: calc(100px); left: 576px;"><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div></div><div class="spinner-overlay"></div>
+                                <!-- ngIf: $root.isLoaded --><div ng-if="$root.isLoaded" class="ng-scope" style="">
+                                    
+
+
+
+<!-- ngView: --><div ng-view="" class="ng-scope"><!-- ngIf: isLoaded --><div ng-if="isLoaded" class="ng-scope">
+    <ocs-401 meta="meta" msgheader="379143" msgbody="379144" class="ng-isolate-scope"><!-- ngIf: !$root.isAuthenticated --></ocs-401>
+    <!-- ngIf: $root.isAuthenticated --><div ng-if="$root.isAuthenticated" class="ng-scope">
+        <div ocs-spinner="" is-loaded="!vm.isLoading" style="position: relative; min-height: 140px;" class="ng-isolate-scope"><div class="spinner" style="top: calc(50%); left: 576px;"><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div></div><div class="spinner-overlay"></div>
+            <!-- ngIf: !vm.isLoading --><div id="DashboardView" ng-if="!vm.isLoading" class="ng-scope" style="">
+                <div class="dashboard-content">
+                    <div class="dashboard-column-3 md-100 md-flow-row">
+                        <div class="dashboard-widget-wrapper md-50">
+                            <div class="dashboard-widget-content">
+                                <div class="widget-content-header">
+                                    <h2 class="content-header-title ng-binding" tabindex="0">My Job Search</h2>
+                                </div>
+                                <div class="widget-content-body">
+                                    <ul class="content-list">
+                                        <!-- ngRepeat: link in vm.myJobSearch --><!-- ngIf: link.url --><li ng-repeat="link in vm.myJobSearch" ng-if="link.url" class="content-list-item ng-scope">
+                                            <a href="/SavedJobs" class="list-item-link ng-binding">View all saved jobs</a>
+                                        </li><!-- end ngIf: link.url --><!-- end ngRepeat: link in vm.myJobSearch --><!-- ngIf: link.url --><li ng-repeat="link in vm.myJobSearch" ng-if="link.url" class="content-list-item ng-scope">
+                                            <a href="/SavedSearches" class="list-item-link ng-binding">Saved job alerts</a>
+                                        </li><!-- end ngIf: link.url --><!-- end ngRepeat: link in vm.myJobSearch -->
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ngIf: vm.config.upcomingAreaEvents.enabled --><div class="dashboard-widget-wrapper md-50 ng-scope" ng-if="vm.config.upcomingAreaEvents.enabled">
+                            <div class="dashboard-widget-content">
+                                <div class="widget-content-header">
+                                    <h2 class="content-header-title ng-binding" tabindex="0">Upcoming Events</h2>
+                                </div>
+                                <div ocs-spinner="" is-loaded="!vm.isEventsLoading" class="ng-isolate-scope" style="position: relative; min-height: 140px;"><div class="spinner" style="top: calc(50%); left: 110px;"><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div></div><div class="spinner-overlay"></div>
+                                    <div class="widget-content-events">
+                                        <!-- ngIf: vm.data.upcomingEvents && vm.data.upcomingEvents.length -->
+                                        <!-- ngIf: !vm.data.upcomingEvents || !vm.data.upcomingEvents.length --><div ng-if="!vm.data.upcomingEvents || !vm.data.upcomingEvents.length" style="height:100%;" class="no-events-notice ng-binding ng-scope">
+                                            No area events in next 30 days.
+                                        </div><!-- end ngIf: !vm.data.upcomingEvents || !vm.data.upcomingEvents.length -->
+                                    </div>
+                                    <div class="widget-content-footer">
+                                        <a href="/events" class="btn btn-outline-primary btn-block btn-sm ng-binding">View all events</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- end ngIf: vm.config.upcomingAreaEvents.enabled -->
+                    </div>
+                    <div class="dashboard-column-9 dashboard-column-expand">
+                        <div class="dashboard-widget-wrapper">
+                            <div class="dashboard-widget-content">
+                                <div class="widget-content-header">
+                                    <h2 class="content-header-title ng-binding" tabindex="0">My Checklist</h2>
+                                </div>
+                                <div class="widget-content-body align-center">
+                                    <div ocs-spinner="" is-loaded="!vm.isChecklistLoading" class="checklist-container ng-isolate-scope" style="position: relative; min-height: 140px;"><div class="spinner" style="top: calc(50%); left: 400.5px;"><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div></div><div class="spinner-overlay"></div>
+                                        <!-- ngRepeat: item in vm.data.checkList --><div class="checklist-wrapper ng-scope" ng-repeat="item in vm.data.checkList">
+                                            <div class="checklist-item-status" ng-class="{'task-done': item.done}">
+                                                <!-- ngIf: !item.done --><span ng-if="!item.done" class="ng-binding ng-scope">1</span><!-- end ngIf: !item.done -->
+                                            </div>
+                                            <div class="checklist-item-name">
+                                                <a href="resumes/index" class="ng-binding">Create my resume &amp; make it searchable</a>
+                                            </div>
+                                        </div><!-- end ngRepeat: item in vm.data.checkList --><div class="checklist-wrapper ng-scope" ng-repeat="item in vm.data.checkList">
+                                            <div class="checklist-item-status" ng-class="{'task-done': item.done}">
+                                                <!-- ngIf: !item.done --><span ng-if="!item.done" class="ng-binding ng-scope">2</span><!-- end ngIf: !item.done -->
+                                            </div>
+                                            <div class="checklist-item-name">
+                                                <a href="https://browse.monsterworksdemo.com/nocriteria" class="ng-binding">Search for jobs</a>
+                                            </div>
+                                        </div><!-- end ngRepeat: item in vm.data.checkList --><div class="checklist-wrapper ng-scope" ng-repeat="item in vm.data.checkList">
+                                            <div class="checklist-item-status" ng-class="{'task-done': item.done}">
+                                                <!-- ngIf: !item.done --><span ng-if="!item.done" class="ng-binding ng-scope">3</span><!-- end ngIf: !item.done -->
+                                            </div>
+                                            <div class="checklist-item-name">
+                                                <a href="SavedSearches/" class="ng-binding">Save a job search and get alerts</a>
+                                            </div>
+                                        </div><!-- end ngRepeat: item in vm.data.checkList --><div class="checklist-wrapper ng-scope" ng-repeat="item in vm.data.checkList">
+                                            <div class="checklist-item-status" ng-class="{'task-done': item.done}">
+                                                <!-- ngIf: !item.done --><span ng-if="!item.done" class="ng-binding ng-scope">4</span><!-- end ngIf: !item.done -->
+                                            </div>
+                                            <div class="checklist-item-name">
+                                                <a href="applicationHistory/" class="ng-binding">Apply to jobs</a>
+                                            </div>
+                                        </div><!-- end ngRepeat: item in vm.data.checkList -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashboard-content">
+                    <div class="dashboard-column-3 md-50">
+                        <div class="dashboard-widget-wrapper">
+                            <div class="dashboard-widget-content">
+                                <div class="widget-content-header">
+                                    <h2 class="content-header-title ng-binding" tabindex="0">My Career Tools</h2>
+                                </div>
+                                <div class="widget-content-body">
+                                    <ul class="content-list">
+                                        <!-- ngRepeat: link in vm.myCareerTools --><!-- ngIf: link.url --><li ng-repeat="link in vm.myCareerTools" ng-if="link.url" class="ng-scope">
+                                            <a href="/budgetCalculator" class="ng-binding">What do I need to earn?</a>
+                                        </li><!-- end ngIf: link.url --><!-- end ngRepeat: link in vm.myCareerTools --><!-- ngIf: link.url --><li ng-repeat="link in vm.myCareerTools" ng-if="link.url" class="ng-scope">
+                                            <a href="/careerPersonality" class="ng-binding">What’s my career personality?</a>
+                                        </li><!-- end ngIf: link.url --><!-- end ngRepeat: link in vm.myCareerTools --><!-- ngIf: link.url --><li ng-repeat="link in vm.myCareerTools" ng-if="link.url" class="ng-scope">
+                                            <a href="/occupations" class="ng-binding">Research careers</a>
+                                        </li><!-- end ngIf: link.url --><!-- end ngRepeat: link in vm.myCareerTools -->
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ngIf: vm.config.myCalendar.enabled --><div class="dashboard-column-3 md-50 ng-scope" ng-if="vm.config.myCalendar.enabled">
+                        <div class="dashboard-widget-wrapper">
+                            <div class="dashboard-widget-content">
+                                <div class="widget-content-header">
+                                    <h2 class="content-header-title ng-binding" tabindex="0">My Calendar</h2>
+                                </div>
+                                <div ocs-spinner="" is-loaded="!vm.isCalendarLoading" class="ng-isolate-scope" style="position: relative; min-height: 140px;"><div class="spinner" style="top: calc(50%); left: 110px;"><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div></div><div class="spinner-overlay"></div>
+                                    <div class="widget-content-events align-center-top" ng-class="{'align-center-top' : !vm.data.myCalendar || !vm.data.myCalendar.length }">
+                                        <!-- ngIf: vm.data.myCalendar && vm.data.myCalendar.length -->
+                                        <!-- ngIf: !vm.data.myCalendar || !vm.data.myCalendar.length --><div ng-if="!vm.data.myCalendar || !vm.data.myCalendar.length" style="height:100%;" class="no-events-notice ng-binding ng-scope">
+                                            No calendar events in next 30 days.
+                                        </div><!-- end ngIf: !vm.data.myCalendar || !vm.data.myCalendar.length -->
+                                    </div>
+                                    <div class="widget-content-footer">
+                                        <a href="/calendar" class="btn btn-outline-primary btn-block btn-sm ng-binding" tabindex="0">View calendar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- end ngIf: vm.config.myCalendar.enabled -->
+                    <div class="dashboard-column-6 dashboard-column-expand">
+                        <div class="dashboard-widget-wrapper">
+                            <div class="dashboard-widget-content">
+                                <div class="widget-content-header">
+                                    <h2 class="content-header-title ng-binding" tabindex="0">Message Center</h2>
+                                </div>
+                                <div class="widget-content-body text-content ng-binding" ng-bind-html=":preResolved:msg(370581)"><h3 tabindex="0">Welcome to your dashboard</h3><p tabindex="0">To get you started we've set up the checklist above. Remember that you'll be able to manage all of your career searching activities right from here. Also, be sure to check out the Budget calculator, Occupation search, and Training search. They're all valuable tools to assist in your career evolution.</p><p>Learn more about <a href="/dahsboard/2">link</a>!</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashboard-content content-flex-start">
+                    <!-- ngRepeat: box in vm.boxes --><div class="dashboard-column-9 md-100 ng-scope" ng-repeat="box in vm.boxes">
+                        <div class="dashboard-widget-wrapper widget-height-auto">
+                            <div class="dashboard-widget-content">
+                                <div class="widget-content-header has-toggle">
+                                    <h2 id="myActivities" class="content-header-title ng-binding" tabindex="0">My Activities</h2>
+                                    <div class="toggle">
+                                        <a href="" ng-click="hiddenCardsToggled = !hiddenCardsToggled" tabindex="0">Toggle hidden cards</a> |
+                                        <a href="" ng-click="vm.edit(box.id)" tabindex="0">Edit</a>
+                                    </div>
+                                </div>
+                                <div ocs-spinner="" is-loaded="!vm.isActivitiesLoading()" class="widget-content-cards ng-isolate-scope" role="application" style="position: relative; min-height: 140px;"><div class="spinner" style="top: calc(50%); left: 420.5px;"><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div></div><div class="spinner-overlay"></div>
+                                    <!-- ngIf: hiddenCardsToggled -->
+                                    <div class="visible-cards" role="list" aria-labelledby="myActivities">
+                                        <!-- ngRepeat: card in box.visible --><div class="card card-content-collapsed ng-scope" ng-repeat="card in box.visible" aria-expanded="false" role="listitem">
+                                            <div class="card-header" ng-click="vm.cardOpen($event, box.id)">
+                                                <h3 class="card-header-title" tabindex="0">
+                                                    <span ng-class="{'orange' : (!vm.data[card.id] || vm.data[card.id].length === 0), 'green' : (vm.data[card.id].length < 5 &amp;&amp; vm.data[card.id].length > 0), 'purple': (vm.data[card.id].length >= 5), 'gray' : card.hidden}" class="ng-binding orange">
+                                                        0
+                                                    </span>
+                                                    <span class="ng-binding">Resumes</span>
+                                                </h3>
+                                                <div class="card-header-icon" aria-expanded="true" role="button" aria-label="card." ng-keydown="vm.expandCardContent($event, this)" tabindex="0"></div>
+                                            </div>
+                                            <div class="card-content" tabindex="-1">
+                                                <!-- ngIf: !vm.data[card.id].length --><span ng-if="!vm.data[card.id].length" tabindex="-1" class="ng-binding ng-scope">You have not created or saved any items in this section yet.  </span><!-- end ngIf: !vm.data[card.id].length -->
+                                                <!-- ngIf: vm.data[card.id].length && card.id !== 'careerPersonality' && card.id !== 'budgetCalculator' -->
+                                            </div>
+                                            <div class="card-footer">
+                                                <!-- ngIf: vm.data[card.id].length -->
+                                                <!-- ngIf: !vm.data[card.id].length --><a href="/resumes/index" ng-if="!vm.data[card.id].length" tabindex="0" draggable="false" class="btn btn-outline-primary btn-block btn-sm ng-binding ng-scope">Get started</a><!-- end ngIf: !vm.data[card.id].length -->
+                                            </div>
+                                        </div><!-- end ngRepeat: card in box.visible --><div class="card card-content-collapsed ng-scope" ng-repeat="card in box.visible" aria-expanded="false" role="listitem">
+                                            <div class="card-header" ng-click="vm.cardOpen($event, box.id)">
+                                                <h3 class="card-header-title" tabindex="0">
+                                                    <span ng-class="{'orange' : (!vm.data[card.id] || vm.data[card.id].length === 0), 'green' : (vm.data[card.id].length < 5 &amp;&amp; vm.data[card.id].length > 0), 'purple': (vm.data[card.id].length >= 5), 'gray' : card.hidden}" class="ng-binding orange">
+                                                        0
+                                                    </span>
+                                                    <span class="ng-binding">Documents</span>
+                                                </h3>
+                                                <div class="card-header-icon" aria-expanded="true" role="button" aria-label="card." ng-keydown="vm.expandCardContent($event, this)" tabindex="0"></div>
+                                            </div>
+                                            <div class="card-content" tabindex="-1">
+                                                <!-- ngIf: !vm.data[card.id].length --><span ng-if="!vm.data[card.id].length" tabindex="-1" class="ng-binding ng-scope">You have not created or saved any items in this section yet.  </span><!-- end ngIf: !vm.data[card.id].length -->
+                                                <!-- ngIf: vm.data[card.id].length && card.id !== 'careerPersonality' && card.id !== 'budgetCalculator' -->
+                                            </div>
+                                            <div class="card-footer">
+                                                <!-- ngIf: vm.data[card.id].length -->
+                                                <!-- ngIf: !vm.data[card.id].length --><a href="/Documents/" ng-if="!vm.data[card.id].length" tabindex="0" draggable="false" class="btn btn-outline-primary btn-block btn-sm ng-binding ng-scope">Get started</a><!-- end ngIf: !vm.data[card.id].length -->
+                                            </div>
+                                        </div><!-- end ngRepeat: card in box.visible --><div class="card card-content-collapsed ng-scope" ng-repeat="card in box.visible" aria-expanded="false" role="listitem">
+                                            <div class="card-header" ng-click="vm.cardOpen($event, box.id)">
+                                                <h3 class="card-header-title" tabindex="0">
+                                                    <span ng-class="{'orange' : (!vm.data[card.id] || vm.data[card.id].length === 0), 'green' : (vm.data[card.id].length < 5 &amp;&amp; vm.data[card.id].length > 0), 'purple': (vm.data[card.id].length >= 5), 'gray' : card.hidden}" class="ng-binding orange">
+                                                        0
+                                                    </span>
+                                                    <span class="ng-binding">Cover Letters</span>
+                                                </h3>
+                                                <div class="card-header-icon" aria-expanded="true" role="button" aria-label="card." ng-keydown="vm.expandCardContent($event, this)" tabindex="0"></div>
+                                            </div>
+                                            <div class="card-content" tabindex="-1">
+                                                <!-- ngIf: !vm.data[card.id].length --><span ng-if="!vm.data[card.id].length" tabindex="-1" class="ng-binding ng-scope">You have not created or saved any items in this section yet.  </span><!-- end ngIf: !vm.data[card.id].length -->
+                                                <!-- ngIf: vm.data[card.id].length && card.id !== 'careerPersonality' && card.id !== 'budgetCalculator' -->
+                                            </div>
+                                            <div class="card-footer">
+                                                <!-- ngIf: vm.data[card.id].length -->
+                                                <!-- ngIf: !vm.data[card.id].length --><a href="/CoverLetters/index" ng-if="!vm.data[card.id].length" tabindex="0" draggable="false" class="btn btn-outline-primary btn-block btn-sm ng-binding ng-scope">Get started</a><!-- end ngIf: !vm.data[card.id].length -->
+                                            </div>
+                                        </div><!-- end ngRepeat: card in box.visible --><div class="card card-content-collapsed ng-scope" ng-repeat="card in box.visible" aria-expanded="false" role="listitem">
+                                            <div class="card-header" ng-click="vm.cardOpen($event, box.id)">
+                                                <h3 class="card-header-title" tabindex="0">
+                                                    <span ng-class="{'orange' : (!vm.data[card.id] || vm.data[card.id].length === 0), 'green' : (vm.data[card.id].length < 5 &amp;&amp; vm.data[card.id].length > 0), 'purple': (vm.data[card.id].length >= 5), 'gray' : card.hidden}" class="ng-binding orange">
+                                                        0
+                                                    </span>
+                                                    <span class="ng-binding">Saved Search</span>
+                                                </h3>
+                                                <div class="card-header-icon" aria-expanded="true" role="button" aria-label="card." ng-keydown="vm.expandCardContent($event, this)" tabindex="0"></div>
+                                            </div>
+                                            <div class="card-content" tabindex="-1">
+                                                <!-- ngIf: !vm.data[card.id].length --><span ng-if="!vm.data[card.id].length" tabindex="-1" class="ng-binding ng-scope">You have not created or saved any items in this section yet.  </span><!-- end ngIf: !vm.data[card.id].length -->
+                                                <!-- ngIf: vm.data[card.id].length && card.id !== 'careerPersonality' && card.id !== 'budgetCalculator' -->
+                                            </div>
+                                            <div class="card-footer">
+                                                <!-- ngIf: vm.data[card.id].length -->
+                                                <!-- ngIf: !vm.data[card.id].length --><a href="/SavedSearches/" ng-if="!vm.data[card.id].length" tabindex="0" draggable="false" class="btn btn-outline-primary btn-block btn-sm ng-binding ng-scope">Get started</a><!-- end ngIf: !vm.data[card.id].length -->
+                                            </div>
+                                        </div><!-- end ngRepeat: card in box.visible --><div class="card card-content-collapsed ng-scope" ng-repeat="card in box.visible" aria-expanded="false" role="listitem">
+                                            <div class="card-header" ng-click="vm.cardOpen($event, box.id)">
+                                                <h3 class="card-header-title" tabindex="0">
+                                                    <span ng-class="{'orange' : (!vm.data[card.id] || vm.data[card.id].length === 0), 'green' : (vm.data[card.id].length < 5 &amp;&amp; vm.data[card.id].length > 0), 'purple': (vm.data[card.id].length >= 5), 'gray' : card.hidden}" class="ng-binding orange">
+                                                        0
+                                                    </span>
+                                                    <span class="ng-binding">View All Saved Jobs</span>
+                                                </h3>
+                                                <div class="card-header-icon" aria-expanded="true" role="button" aria-label="card." ng-keydown="vm.expandCardContent($event, this)" tabindex="0"></div>
+                                            </div>
+                                            <div class="card-content" tabindex="-1">
+                                                <!-- ngIf: !vm.data[card.id].length --><span ng-if="!vm.data[card.id].length" tabindex="-1" class="ng-binding ng-scope">You have not created or saved any items in this section yet.  </span><!-- end ngIf: !vm.data[card.id].length -->
+                                                <!-- ngIf: vm.data[card.id].length && card.id !== 'careerPersonality' && card.id !== 'budgetCalculator' -->
+                                            </div>
+                                            <div class="card-footer">
+                                                <!-- ngIf: vm.data[card.id].length -->
+                                                <!-- ngIf: !vm.data[card.id].length --><a href="/SavedJobs/" ng-if="!vm.data[card.id].length" tabindex="0" draggable="false" class="btn btn-outline-primary btn-block btn-sm ng-binding ng-scope">Get started</a><!-- end ngIf: !vm.data[card.id].length -->
+                                            </div>
+                                        </div><!-- end ngRepeat: card in box.visible --><div class="card card-content-collapsed ng-scope" ng-repeat="card in box.visible" aria-expanded="false" role="listitem">
+                                            <div class="card-header" ng-click="vm.cardOpen($event, box.id)">
+                                                <h3 class="card-header-title" tabindex="0">
+                                                    <span ng-class="{'orange' : (!vm.data[card.id] || vm.data[card.id].length === 0), 'green' : (vm.data[card.id].length < 5 &amp;&amp; vm.data[card.id].length > 0), 'purple': (vm.data[card.id].length >= 5), 'gray' : card.hidden}" class="ng-binding orange">
+                                                        0
+                                                    </span>
+                                                    <span class="ng-binding">Applied Jobs</span>
+                                                </h3>
+                                                <div class="card-header-icon" aria-expanded="true" role="button" aria-label="card." ng-keydown="vm.expandCardContent($event, this)" tabindex="0"></div>
+                                            </div>
+                                            <div class="card-content" tabindex="-1">
+                                                <!-- ngIf: !vm.data[card.id].length --><span ng-if="!vm.data[card.id].length" tabindex="-1" class="ng-binding ng-scope">You have not created or saved any items in this section yet.  </span><!-- end ngIf: !vm.data[card.id].length -->
+                                                <!-- ngIf: vm.data[card.id].length && card.id !== 'careerPersonality' && card.id !== 'budgetCalculator' -->
+                                            </div>
+                                            <div class="card-footer">
+                                                <!-- ngIf: vm.data[card.id].length -->
+                                                <!-- ngIf: !vm.data[card.id].length --><a href="https://browse.monsterworksdemo.com/nocriteria" ng-if="!vm.data[card.id].length" tabindex="0" draggable="false" class="btn btn-outline-primary btn-block btn-sm ng-binding ng-scope">Get started</a><!-- end ngIf: !vm.data[card.id].length -->
+                                            </div>
+                                        </div><!-- end ngRepeat: card in box.visible --><div class="card card-content-collapsed ng-scope" ng-repeat="card in box.visible" aria-expanded="false" role="listitem">
+                                            <div class="card-header" ng-click="vm.cardOpen($event, box.id)">
+                                                <h3 class="card-header-title" tabindex="0">
+                                                    <span ng-class="{'orange' : (!vm.data[card.id] || vm.data[card.id].length === 0), 'green' : (vm.data[card.id].length < 5 &amp;&amp; vm.data[card.id].length > 0), 'purple': (vm.data[card.id].length >= 5), 'gray' : card.hidden}" class="ng-binding orange">
+                                                        0
+                                                    </span>
+                                                    <span class="ng-binding">Saved Occupations</span>
+                                                </h3>
+                                                <div class="card-header-icon" aria-expanded="true" role="button" aria-label="card." ng-keydown="vm.expandCardContent($event, this)" tabindex="0"></div>
+                                            </div>
+                                            <div class="card-content" tabindex="-1">
+                                                <!-- ngIf: !vm.data[card.id].length --><span ng-if="!vm.data[card.id].length" tabindex="-1" class="ng-binding ng-scope">You have not created or saved any items in this section yet.
+</span><!-- end ngIf: !vm.data[card.id].length -->
+                                                <!-- ngIf: vm.data[card.id].length && card.id !== 'careerPersonality' && card.id !== 'budgetCalculator' -->
+                                            </div>
+                                            <div class="card-footer">
+                                                <!-- ngIf: vm.data[card.id].length -->
+                                                <!-- ngIf: !vm.data[card.id].length --><a href="/occupations/" ng-if="!vm.data[card.id].length" tabindex="0" draggable="false" class="btn btn-outline-primary btn-block btn-sm ng-binding ng-scope">Get started</a><!-- end ngIf: !vm.data[card.id].length -->
+                                            </div>
+                                        </div><!-- end ngRepeat: card in box.visible --><div class="card card-content-collapsed ng-scope" ng-repeat="card in box.visible" aria-expanded="false" role="listitem">
+                                            <div class="card-header" ng-click="vm.cardOpen($event, box.id)">
+                                                <h3 class="card-header-title" tabindex="0">
+                                                    <span ng-class="{'orange' : (!vm.data[card.id] || vm.data[card.id].length === 0), 'green' : (vm.data[card.id].length < 5 &amp;&amp; vm.data[card.id].length > 0), 'purple': (vm.data[card.id].length >= 5), 'gray' : card.hidden}" class="ng-binding orange">
+                                                        0
+                                                    </span>
+                                                    <span class="ng-binding">Saved Schools</span>
+                                                </h3>
+                                                <div class="card-header-icon" aria-expanded="true" role="button" aria-label="card." ng-keydown="vm.expandCardContent($event, this)" tabindex="0"></div>
+                                            </div>
+                                            <div class="card-content" tabindex="-1">
+                                                <!-- ngIf: !vm.data[card.id].length --><span ng-if="!vm.data[card.id].length" tabindex="-1" class="ng-binding ng-scope">You have not created or saved any items in this section yet.  Get started searching occupations to find matching schools.  </span><!-- end ngIf: !vm.data[card.id].length -->
+                                                <!-- ngIf: vm.data[card.id].length && card.id !== 'careerPersonality' && card.id !== 'budgetCalculator' -->
+                                            </div>
+                                            <div class="card-footer">
+                                                <!-- ngIf: vm.data[card.id].length -->
+                                                <!-- ngIf: !vm.data[card.id].length --><a href="/occupations/" ng-if="!vm.data[card.id].length" tabindex="0" draggable="false" class="btn btn-outline-primary btn-block btn-sm ng-binding ng-scope">Get started</a><!-- end ngIf: !vm.data[card.id].length -->
+                                            </div>
+                                        </div><!-- end ngRepeat: card in box.visible --><div class="card card-content-collapsed ng-scope" ng-repeat="card in box.visible" aria-expanded="false" role="listitem">
+                                            <div class="card-header" ng-click="vm.cardOpen($event, box.id)">
+                                                <h3 class="card-header-title" tabindex="0">
+                                                    <span ng-class="{'orange' : (!vm.data[card.id] || vm.data[card.id].length === 0), 'green' : (vm.data[card.id].length < 5 &amp;&amp; vm.data[card.id].length > 0), 'purple': (vm.data[card.id].length >= 5), 'gray' : card.hidden}" class="ng-binding orange">
+                                                        0
+                                                    </span>
+                                                    <span class="ng-binding">Career Goals</span>
+                                                </h3>
+                                                <div class="card-header-icon" aria-expanded="true" role="button" aria-label="card." ng-keydown="vm.expandCardContent($event, this)" tabindex="0"></div>
+                                            </div>
+                                            <div class="card-content" tabindex="-1">
+                                                <!-- ngIf: !vm.data[card.id].length --><span ng-if="!vm.data[card.id].length" tabindex="-1" class="ng-binding ng-scope">You have not created or saved any items in this section yet.</span><!-- end ngIf: !vm.data[card.id].length -->
+                                                <!-- ngIf: vm.data[card.id].length && card.id !== 'careerPersonality' && card.id !== 'budgetCalculator' -->
+                                            </div>
+                                            <div class="card-footer">
+                                                <!-- ngIf: vm.data[card.id].length -->
+                                                <!-- ngIf: !vm.data[card.id].length --><a href="/careerPlan/" ng-if="!vm.data[card.id].length" tabindex="0" draggable="false" class="btn btn-outline-primary btn-block btn-sm ng-binding ng-scope">Get started</a><!-- end ngIf: !vm.data[card.id].length -->
+                                            </div>
+                                        </div><!-- end ngRepeat: card in box.visible --><div class="card card-content-collapsed ng-scope" ng-repeat="card in box.visible" aria-expanded="false" role="listitem">
+                                            <div class="card-header" ng-click="vm.cardOpen($event, box.id)">
+                                                <h3 class="card-header-title" tabindex="0">
+                                                    <span ng-class="{'orange' : (!vm.data[card.id] || vm.data[card.id].length === 0), 'green' : (vm.data[card.id].length < 5 &amp;&amp; vm.data[card.id].length > 0), 'purple': (vm.data[card.id].length >= 5), 'gray' : card.hidden}" class="ng-binding orange">
+                                                        0
+                                                    </span>
+                                                    <span class="ng-binding">Saved Training</span>
+                                                </h3>
+                                                <div class="card-header-icon" aria-expanded="true" role="button" aria-label="card." ng-keydown="vm.expandCardContent($event, this)" tabindex="0"></div>
+                                            </div>
+                                            <div class="card-content" tabindex="-1">
+                                                <!-- ngIf: !vm.data[card.id].length --><span ng-if="!vm.data[card.id].length" tabindex="-1" class="ng-binding ng-scope">You have not created or saved any items in this section yet.</span><!-- end ngIf: !vm.data[card.id].length -->
+                                                <!-- ngIf: vm.data[card.id].length && card.id !== 'careerPersonality' && card.id !== 'budgetCalculator' -->
+                                            </div>
+                                            <div class="card-footer">
+                                                <!-- ngIf: vm.data[card.id].length -->
+                                                <!-- ngIf: !vm.data[card.id].length --><a href="/programs/" ng-if="!vm.data[card.id].length" tabindex="0" draggable="false" class="btn btn-outline-primary btn-block btn-sm ng-binding ng-scope">Get started</a><!-- end ngIf: !vm.data[card.id].length -->
+                                            </div>
+                                        </div><!-- end ngRepeat: card in box.visible -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- end ngRepeat: box in vm.boxes -->
+                    <div class="dashboard-column-3 md-100 md-flow-row">
+                        <div class="dashboard-widget-wrapper md-50">
+                            <div class="dashboard-widget-content content-height-auto">
+                                <div class="widget-content-header">
+                                    <h2 class="content-header-title ng-binding" tabindex="0">Budget Calculator</h2>
+                                </div>
+                                <div ocs-spinner="" is-loaded="!vm.isBudgetLoading" class="ng-isolate-scope" style="position: relative; min-height: 140px;"><div class="spinner" style="top: calc(50%); left: 110px;"><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div></div><div class="spinner-overlay"></div>
+                                    <div class="widget-content-body budget-calculator">
+                                        <!-- ngIf: !vm.data.budgetCalculator.length --><span ng-if="!vm.data.budgetCalculator.length" class="ng-binding ng-scope">You have not created or saved any items in this section yet.
+</span><!-- end ngIf: !vm.data.budgetCalculator.length -->
+                                        <!-- ngRepeat: item in vm.data.budgetCalculator -->
+                                    </div>
+                                    <div class="widget-content-footer">
+                                        <!-- ngIf: vm.data.budgetCalculator.length -->
+                                        <!-- ngIf: !vm.data.budgetCalculator.length --><a href="/budgetCalculator/" ng-if="!vm.data.budgetCalculator.length" tabindex="0" draggable="false" class="btn btn-outline-primary btn-block btn-sm ng-binding ng-scope">Get started</a><!-- end ngIf: !vm.data.budgetCalculator.length -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dashboard-widget-wrapper md-50">
+                            <div class="dashboard-widget-content content-height-auto career-personality">
+                                <div class="widget-content-header">
+                                    <h2 class="content-header-title ng-binding col-xs-12" ng-class="vm.data.careerPersonality.length ? 'col-xs-6' : 'col-xs-12'" tabindex="0">Career Personality</h2>
+                                    <!-- ngIf: vm.data.careerPersonality.length -->
+                                </div>
+                                <div ocs-spinner="" is-loaded="!vm.isCareerPersonalityLoading" class="ng-isolate-scope" style="position: relative; min-height: 140px;"><div class="spinner" style="top: calc(50%); left: 110px;"><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div></div><div class="spinner-overlay"></div>
+                                    <div class="widget-content-body align-center">
+                                        <!-- ngIf: !vm.data.careerPersonality.length --><span ng-if="!vm.data.careerPersonality.length" class="ng-binding ng-scope">You have not created or saved any items in this section yet.</span><!-- end ngIf: !vm.data.careerPersonality.length -->
+                                        <!-- ngIf: vm.data.careerPersonality.length -->
+                                    </div>
+                                    <!-- ngIf: !vm.data.careerPersonality.length --><div class="widget-content-footer ng-scope" ng-if="!vm.data.careerPersonality.length">
+                                        <!-- ngIf: !vm.data.careerPersonality.length --><a href="/careerPersonality/" ng-if="!vm.data.careerPersonality.length" draggable="false" class="btn btn-outline-primary btn-block btn-sm ng-binding ng-scope">Get started</a><!-- end ngIf: !vm.data.careerPersonality.length -->
+                                    </div><!-- end ngIf: !vm.data.careerPersonality.length -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end ngIf: !vm.isLoading -->
+        </div>
+    </div><!-- end ngIf: $root.isAuthenticated -->
+</div><!-- end ngIf: isLoaded -->
+
+<script type="text/ng-template" id="myModalContent.html" class="ng-scope">
+    <div class="modal-header">
+        <h3 class="modal-title" id="modal-title" tabindex="0">My activities - edit</h3>
+    </div>
+    <div class="modal-body" id="cardsEdit">
+        <div class="hidden-cards">
+            <div class="card" ng-repeat="(i, card) in vm.box.hidden" tabindex="0">
+                <div class="card-header">
+                    <h4 tabindex="0">{{:preResolved:msg(vm.names[card.id].nameMsg)}}</h4>
+                </div>
+                <div class="card-toggle">
+                    <a href ng-click="vm.toggleCard('show', i)" tabindex="0"><i class="fa fa-eye"></i> {{:preResolved:msg(383761)}}</a>
+                </div>
+            </div>
+        </div>
+        <div class="visible-cards drag-and-drop" ocs-drag-and-drop="vm.box.visible">
+            <div class="card" ng-repeat="(i, card) in vm.box.visible" draggable="true" tabindex="0" aria-haspopup="true" aria-grabbed="false" role="listitem" aria-label="{{:preResolved:msg(vm.config[box.id + 'Card'].cards[card.id].name)}} {{::msg(383926)}} {{::msg(383928)}}">
+                <div class="card-header">
+                    <h4 tabindex="0">{{:preResolved:msg(vm.names[card.id].nameMsg)}}</h4>
+                </div>
+                <div class="card-toggle">
+                    <a href ng-click="vm.toggleCard('hide', i)" tabindex="0"><i class="fa fa-eye-slash"></i> {{:preResolved:msg(383762)}}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-link" type="button" ng-click="vm.cancel()" tabindex="0">Cancel</button>
+        <button class="btn btn-primary default-focus" type="button" ng-click="vm.save()" tabindex="0">Save</button>
+    </div>
+</script>
+</div>
+
+                                </div><!-- end ngIf: $root.isLoaded -->
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- end ngIf: !$root.topErrorList.length -->
+                
+                <!-- ngIf: configLayout.footer.show.lookUpConfig.value --><div class="footer-bg ng-scope" ng-if="configLayout.footer.show.lookUpConfig.value">
+                        <!-- ngIf: configLayout.footer.show.lookUpConfig.value --><!-- ngInclude: --><ng-include src="configLayout.footer.url.lookUpConfig.value" ng-if="configLayout.footer.show.lookUpConfig.value" class="ng-scope"><div ng-controller="footerController" class="ng-scope">
+    <div ng-bind-html="$root.footerHtml" class="ng-binding"><section class="main-footer col-md-12" id="main-footer">
+    <div class="row footer-links">
+        <div class="col-sm-4 col-md-3">
+            <h4 tabindex="0">Popular Job Categories</h4>
+            <ul class="list-unstyled">
+                <li><a href="https://browse.monsterworksdemo.com/search/?q=part+time">Part Time Jobs</a></li>
+                <li><a href="https://browse.monsterworksdemo.com/search/?q=Accounting">Accounting Jobs</a></li>
+                <li><a href="https://browse.monsterworksdemo.com/search/?q=Engineering">Engineering Jobs</a></li>
+                <li><a href="https://browse.monsterworksdemo.com/search/?q=Healthcare">Healthcare Jobs</a></li>
+            </ul>
+        </div>
+        <div class="col-sm-4 col-md-3">
+            <h4 tabindex="0">Popular Job Titles</h4>
+            <ul class="list-unstyled">
+                <li><a href="https://browse.monsterworksdemo.com/search/?q=work+from+home">Work From Home Jobs</a></li>
+                <li><a href="https://browse.monsterworksdemo.com/search/?q=receptionist">Receptionist Jobs</a></li>
+                <li><a href="https://browse.monsterworksdemo.com/search/?q=online+teaching">Online Teaching Jobs</a></li>
+                <li><a href="https://browse.monsterworksdemo.com/search/?q=medical+assistant">Medical Assistant Jobs</a></li>
+            </ul>
+        </div>
+        <div class="col-sm-4 col-md-3">
+            <h4 tabindex="0">Popular Job Locations</h4>
+            <ul class="list-unstyled">
+                <li><a href="https://browse.monsterworksdemo.com/search/?where=New+York,+NY">Jobs in NYC, NY</a></li>
+                <li><a href="https://browse.monsterworksdemo.com/search/?where=Houston,+TX">Jobs in Houston, TX</a></li>
+                <li><a href="https://browse.monsterworksdemo.com/search/?where=Los+Angeles,+CA">Jobs in Los Angeles, CA</a></li>
+                <li><a href="https://browse.monsterworksdemo.com/search/?where=Atlanta,+GA">Jobs in Atlanta, GA</a></li>
+            </ul>
+        </div>
+        <div class="col-sm-4 col-md-3">
+            <h4 tabindex="0">Popular Companies</h4>
+            <ul class="list-unstyled">
+                <li><a href="https://browse.monsterworksdemo.com/search/?cn=Puma">Puma Jobs</a></li>
+                <li><a href="https://browse.monsterworksdemo.com/search/?cn=Liberty-Mutual-Insurance">Liberty Mutual Insurance Jobs</a></li>
+                <li><a href="https://browse.monsterworksdemo.com/search/?cn=Philips">Philips Jobs</a></li>
+                <li><a href="https://browse.monsterworksdemo.com/search/?cn=Thermo-Fisher-Scientific">Thermo Fisher Scientific Jobs</a></li>
+            </ul>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <!--         <div class="col-xs-4 col-xs-offset-4 col-sm-3 col-sm-offset-0 col-md-2 mb-sm-16"> -->
+        <div class="col-xs-12 col-sm-4 col-md-4">
+            <div class="row">
+                <!-- div class="col-xs-4 col-xs-offset-4 col-sm-6 col-sm-offset-0 col-lg-5 col-lg-offset-0" -->
+                <div class="col-xs-4 col-xs-offset-4 col-sm-7 col-sm-offset-0 col-lg-6 col-lg-offset-0">
+                    <a href="https://www.monsterworksdemo.com" title="Monster Works Demo" class="monster-logo" id="lexusdemo-footer-logo-link">
+                        <img src="https://securemedia.newjobs.com/id/mgs/10338/monster_gov_sol.png" alt="Powered by Monster" border="0">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4 text-center">
+            <p class="mb0">Find us on social media:</p>
+            <ul class="list-unstyled list-inline social-media-links">
+                <li>
+                    <a href="https://plus.google.com/+monster" title="Google+">
+                        <span class="fa fa-lg fa-google-plus"></span><span class="sr-only">Google+</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/monster" title="Facebook">
+                        <span class="fa fa-lg fa-facebook"></span><span class="sr-only">Facebook</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com/monster" title="Twitter">
+                        <span class="fa fa-lg fa-twitter"></span><span class="sr-only">Twitter</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/monster/" title="Instagram">
+                        <span class="fa fa-lg fa-instagram"></span><span class="sr-only">Instagram</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/monster" title="YouTube">
+                        <span class="fa fa-lg fa-youtube-play"></span><span class="sr-only">YouTube</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4 basic-info">
+            <p class="small">
+                <a target="_blank" href="https://www.monster.com/inside/policy/inside2.aspx" title="Privacy Policy">Privacy Policy</a> |
+                <a target="_blank" href="https://www.monsterworksdemo.com/termsOfUse" title="Terms of use">Terms of Use</a> |
+                <a href="/ContactUs" title="Contact us" id="lexusdemo-footer-contact-link">Contact Us</a>
+            </p>
+            <small>Copyright © <span id="full-year">2020</span> - Monster Government Solutions</small>
+        </div>
+    </div>
+</section>
+<script>
+    var textnode = document.createTextNode(new Date().getFullYear());
+    document.getElementById("full-year").appendChild(textnode);
+    if (window.location.hostname.toLowerCase().startsWith('hiring')) {
+        document.getElementById("lexusdemo-footer-logo-link").href = "https://hiring.monsterworksdemo.com/";
+        document.getElementById("lexusdemo-footer-contact-link").href = "https://hiring.monsterworksdemo.com/contactusform.aspx";
+    }
+</script>
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</div>
+
+    <script type="text/ng-template" id="modalTimeoutWarning.html">
+        <div class="modal-header">
+            <h3 class="modal-title" tabindex="0">{{:preResolved:msg(352181)}}</h3>
+        </div>
+        <div class="modal-body">
+            <p tabindex="0">{{:preResolved:msg(352182)}}</p>
+            <p tabindex="0">{{:preResolved:msg(361253)}}: {{timeoutManager.timeRemainingBeforeLogout}}</p>
+
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary" type="button" ng-click="ok()" tabindex="0">{{:preResolved:msg(352183)}}</button>
+        </div>
+    </script>
+
+
+    <!--  Session Time Out -->
+    <script type="text/ng-template" id="modalTimeoutLoggedOut.html">
+        <div class="modal-header">
+            <span class="modal-title" tabindex="0">{{:preResolved:msg(353122)}}</span>
+        </div>
+        <div class="modal-body">
+            <p tabindex="0">{{:preResolved:msg(353120)}}</p>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary" type="button" ng-click="ok()" tabindex="0">{{:preResolved:msg(353121)}}</button>
+        </div>
+    </script>
+
+
+    <!--  Communication Error Modal -->
+    <script type="text/ng-template" id="communicationError.html">
+        <div class="modal-header">
+            <span class="modal-title" tabindex="0">Error - there was a communication Error</span>
+        </div>
+        <div class="modal-body">
+            <span class="h4" tabindex="0">Sorry, a communication error occurred; this could be due to a server reset or an unplanned outage, please, try again later.</span>
+        </div>
+        <div class="modal-footer">
+        </div>
+    </script>
+
+    <!-- Youthopps Job Corp selection modal -->
+    <script type="text/ng-template" id="jobCorpModalTemplate.html">
+        <div class="modal-header">
+            <h3 class="modal-title" id="modal-title" tabindex="0">{{:preResolved:msg(389642)}}</h3>
+        </div>
+        <div class="modal-body" id="modal-body">
+            <p tabindex="0">{{:preResolved:msg(389641)}}</p>
+            <form name="jobcorpform">
+                <div>
+                    <ocs-select meta="meta.oneStopCenter" model="oneStopCenterId"></ocs-select>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary default-focus" type="button" ng-click="ok()" tabindex="0" ng-disabled="jobcorpform.$pristine || !jobcorpform.$valid">{{:preResolved:msg(375141)}}</button>
+            <button class="btn btn-warning" type="button" ng-click="cancel()" tabindex="0">{{:preResolved:msg(367650)}}</button>
+        </div>
+    </script>
+</div>
+
+<!--  Session Warning -->
+</ng-include><!-- end ngIf: configLayout.footer.show.lookUpConfig.value -->
+                </div><!-- end ngIf: configLayout.footer.show.lookUpConfig.value -->
+            </div>
+            <!-- ngIf: configLayout.footer2.show.lookUpConfig.value -->
+        </div>
+    </div>
+    <!-- ngInclude: --><ng-include src="'/UI/shared/login-modal.html'" class="ng-scope"><div ng-controller="ModalLoginCtrl as $ctrl" class="modal-wioa ng-scope">
+    <script type="text/ng-template" id="modalLoginContent.html">
+        <div class="modal-header login-modal">
+            <button type="button" class="close" aria-label="close" role="button" ng-click="$ctrl.cancel()" tabindex="0">&times;</button>
+            <h3 class="modal-title" id="modal-title" tabindex="0">{{$ctrl.settings.title || msg(100749)}}</h3>
+        </div>
+        <div class="modal-body" id="modal-body" tabindex="0">
+            <ocs-login meta="meta" panel-style="'false'" error-Message="{{$ctrl.settings.errorMessage}}" ng-if="!$ctrl.settings.templateUrl" login-Val="{{$ctrl.settings.loginVal}}"></ocs-login>
+
+            <!-- inject the right view below -->
+            <ng-include src="$ctrl.settings.templateUrl"></ng-include>
+        </div>
+        <div class="modal-footer">
+            <!--<button class="btn btn-primary" type="button" ng-click="$ctrl.close()">OK</button>-->
+            <button class="btn btn-warning" type="button" ng-click="$ctrl.cancel()" tabindex="0" ng-if="$ctrl.settings.allowCancel">Cancel</button>
+            <button class="btn btn-primary default-focus" type="button" ng-click="$ctrl.action()" tabindex="0" ng-if="$ctrl.action">Edit account now</button>
+        </div>
+    </script>
+</div>
+
+</ng-include>
+
+
+<script src="https://securemedia.newjobs.com/js/global/at_1.0.js" async=""></script><script src="https://securemedia.newjobs.com/js/sc/sitecatalystLL.js" async=""></script><div class="goog-te-spinner-pos"><div class="goog-te-spinner-animation"><svg xmlns="http://www.w3.org/2000/svg" class="goog-te-spinner" width="96px" height="96px" viewBox="0 0 66 66"><circle class="goog-te-spinner-path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg></div></div></body></html>

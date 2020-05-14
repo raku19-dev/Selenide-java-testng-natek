@@ -37,8 +37,8 @@ public class TestClass {
     String password = "@W3e4r5t";
     String jobCenter = "To edit the items in here change messages 389442-389565";
 
-    double noSavedJobs = 2;
-    double noPossibleSavedJobs = 25;
+    double numberOfSavedJobs = 2;
+    double numberOfPossibleSavedJobs = 25;
 
     HomePage homePage = new HomePage();
     homePage.createAccount().fillTheFormAndCreate
@@ -48,15 +48,15 @@ public class TestClass {
     dashBoard.openLinkText("Philips Jobs");
 
     JobSearchResults job = new JobSearchResults();
-    job.openSpecificJobOffer("2");
-    job.saveCurrentlyOpenJobOffer();
+    job.openSpecificJobOffer(2);
+    job.saveJobOffer();
 
     job.openSpecificJobOffer(job.getTotalJobsFound());
-    job.saveCurrentlyOpenJobOffer();
+    job.saveJobOffer();
 
     MySavedJobs savedJobs = new MySavedJobs();
-    savedJobs.openMySavedJob();
-    savedJobs.correctNumberOfSavedAndPossibleSavedJobsDisplayed(noSavedJobs,noPossibleSavedJobs);
-
+    savedJobs.mySavedJobs();
+    savedJobs.correctNumberOfSavedAndPossibleSavedJobsDisplayed
+            (numberOfSavedJobs,numberOfPossibleSavedJobs);
   }
 }

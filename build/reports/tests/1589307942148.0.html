@@ -1,0 +1,284 @@
+<html lang="en" ng-app="miniSPA" ng-strict-di="" class="k-webkit k-webkit81"><head><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="google-site-verification" content="aS_qUe9hUNWVSTE3auCmF0VonaVONT0_9VoJqSjDXKk">
+    <meta name="robots" content="index,follow">
+
+        <meta name="description" content="Meta description for Lexus home page">
+            <link rel="canonical" href="https://www.monsterworksdemo.com/home/">
+    <title ng-bind="pageTitle">Home - MGS Demo</title>
+    <base href="/">
+
+
+        <script src="https://apis.google.com/_/scs/apps-static/_/js/k=oz.gapi.pl.aa5fl_OAbwQ.O/m=client/rt=j/sv=1/d=1/ed=1/am=wQE/rs=AGLTcCOhs27JvDBjeIggIssbkQNmUPmXyw/cb=gapi.loaded_0" async=""></script><script src="https://core.ui.lexus.monster.com/cdn-release/unstable/lib/lib.min.js?v=2020.8.0.6"></script>
+        <script src="https://core.ui.lexus.monster.com/cdn-release/unstable/lib/core.min.js?v=2020.8.0.6"></script>
+
+    <script src="//kendo.cdn.telerik.com/2018.3.1017/js/kendo.all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-fracs/1.0.1/jquery.fracs.min.js"></script>
+
+            <script src="/dist/scripts.min.js?v=f20aeb0e415374bc3bafa7ba488ab340"></script>
+
+    
+    <!-- google drive api     -->
+    <script src="https://apis.google.com/js/client.js" gapi_processed="true"></script>
+    <script src="https://apis.google.com/js/api.js" gapi_processed="true"></script>
+    <!-- dropbox api -->
+    <script type="text/javascript" src="https://www.dropbox.com/static/api/2/dropins.js" id="dropboxjs" data-app-key="40czhmremdxh40c"></script><style type="text/css">  @-webkit-keyframes rotate {
+    from  { -webkit-transform: rotate(0deg); }
+    to   { -webkit-transform: rotate(360deg); }
+  }
+
+  @keyframes rotate {
+    from  { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+  }
+
+    .dropbox-dropin-btn, .dropbox-dropin-btn:link, .dropbox-dropin-btn:hover {
+      display: inline-block;
+      height: 14px;
+      font-family: "Lucida Grande", "Segoe UI", "Tahoma", "Helvetica Neue", "Helvetica", sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      color: #636363;
+      text-decoration: none;
+      padding: 1px 7px 5px 3px;
+      border: 1px solid #ebebeb;
+      border-radius: 2px;
+      border-bottom-color: #d4d4d4;
+        background: #fcfcfc;
+  background: -moz-linear-gradient(top, #fcfcfc 0%, #f5f5f5 100%);
+  background: -webkit-linear-gradient(top, #fcfcfc 0%, #f5f5f5 100%);
+  background: linear-gradient(to bottom, #fcfcfc 0%, #f5f5f5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#f5f5f5',GradientType=0);  
+    }
+
+    .dropbox-dropin-default:hover, .dropbox-dropin-error:hover {
+      border-color: #dedede;
+      border-bottom-color: #cacaca;
+        background: #fdfdfd;
+  background: -moz-linear-gradient(top, #fdfdfd 0%, #f5f5f5 100%);
+  background: -webkit-linear-gradient(top, #fdfdfd 0%, #f5f5f5 100%);
+  background: linear-gradient(to bottom, #fdfdfd 0%, #f5f5f5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fdfdfd', endColorstr='#f5f5f5',GradientType=0);  
+    }
+
+    .dropbox-dropin-default:active, .dropbox-dropin-error:active {
+      border-color: #d1d1d1;
+      box-shadow: inset 0 1px 1px rgba(0,0,0,0.1);
+    }
+
+    .dropbox-dropin-btn .dropin-btn-status {
+      display: inline-block;
+      width: 15px;
+      height: 14px;
+      vertical-align: bottom;
+      margin: 0 5px 0 2px;
+      background: transparent url('https://www.dropbox.com/static/images/widgets/dbx-saver-status.png') no-repeat;
+      position: relative;
+      top: 2px;
+    }
+
+    .dropbox-dropin-default .dropin-btn-status {
+      background-position: 0px 0px;
+    }
+
+    .dropbox-dropin-progress .dropin-btn-status {
+      width: 18px;
+      margin: 0 4px 0 0;
+      background: url('https://www.dropbox.com/static/images/widgets/dbx-progress.png') no-repeat center center;
+        -webkit-animation-name: rotate;
+        -webkit-animation-duration: 1.7s;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: linear;
+      animation-name: rotate;
+      animation-duration: 1.7s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+
+    .dropbox-dropin-success .dropin-btn-status {
+      background-position: -15px 0px;
+    }
+
+    .dropbox-dropin-disabled {
+      background: #e0e0e0;
+      border: 1px #dadada solid;
+      border-bottom: 1px solid #ccc;
+      box-shadow: none;
+    }
+
+    .dropbox-dropin-disabled .dropin-btn-status {
+      background-position: -30px 0px;
+    }
+
+    .dropbox-dropin-error .dropin-btn-status {
+      background-position: -45px 0px;
+    }
+
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.4) {
+      .dropbox-dropin-btn .dropin-btn-status {
+        background-image: url('https://www.dropbox.com/static/images/widgets/dbx-saver-status-2x.png');
+        background-size: 60px 14px;
+          -webkit-background-size: 60px 14px;
+      }
+
+      .dropbox-dropin-progress .dropin-btn-status {
+        background: url('https://www.dropbox.com/static/images/widgets/dbx-progress-2x.png') no-repeat center center;
+        background-size: 20px 20px;
+          -webkit-background-size: 20px 20px;
+      }
+  }
+
+    .dropbox-saver:hover, .dropbox-chooser:hover {
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .dropbox-chooser, .dropbox-dropin-btn {
+      line-height: 11px !important;
+      text-decoration: none !important;
+      box-sizing: content-box !important;
+        -webkit-box-sizing: content-box !important;
+        -moz-box-sizing: content-box !important;
+    }
+    </style>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0HlOnhp_0PYqZylJT-GMYCfUDjCZyfg0&amp;libraries=places"></script>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+
+    <script src="/scripts/directives/slick/slick.min.js"></script>
+    <script src="/scripts/directives/angular-slick-carousel/dist/angular-slick.min.js"></script>
+
+    <script src="/dist/ui/Home.min.js?v=5d920e28918b9f0fafa7005c3e5bb2bf"></script>
+
+
+    <!-- For bootstrap carousel we need to update the Bootstrap version we use -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+
+                <script src="/Dist/channels/core.min.js?v=fxYRRkyS41Ppcc2sso1esAtp9b4%3d"></script>
+                <script src="/Dist/channels/lexusdemo.min.js?v=a5KAhAgJrdrxh%2bfo0lPg0p9HQ%2bc%3d"></script>
+
+
+    <!--                                                                  ________________      -->
+    <!-- ________________________________________________________________/  Channelized   \_____-->
+    <!-- Styles and Product Configuration -->
+    <!--<link rel="stylesheet" href='//fonts.googleapis.com/icon?family=Material+Icons' />-->
+    <link ng-href="{{$root.configLayout.mainIconsFont.lookUpConfig.value}}" rel="stylesheet">
+    <link ng-href="{{$root.configLayout.mainFont.lookUpConfig.value}}" rel="stylesheet" type="text/css">
+
+        <link rel="stylesheet" type="text/css" href="/dist/styles/kendo-web-lexusdemo.min.css?v=c35339c3246ff591bf75565ee7b266ae">
+
+        <link rel="stylesheet" type="text/css" href="/dist/styles/lexusdemo.min.css?v=c35339c3246ff591bf75565ee7b266ae">
+
+    <script>
+        if (typeof angular === 'undefined') {
+            window.location = '/fatalerror';
+        }
+        (function (angular) {
+            // override the context service
+            "use strict";
+            angular.module('globalApp').service('contextService', ['registry', function(registry) {
+                return {
+                    init: function() {
+                        registry.set('global','context', {"ChannelID":10338,"CountryID":164,"ApplicationID":"Lexus","ChannelAlias":"LEXUSDEMO","ChannelAliases":["CORE","CORE-EN","US-EN","CS-USEN","LEXUSCORE","LEXUSDEMO"],"EnvironmentType":"Production","Version":"2020.8.0.6","UIConfiguration":"Release","cdnUrl":"https://core.ui.lexus.monster.com/cdn-release/unstable","templateUrl":"https://core.ui.lexus.monster.com/uiCore/templates/","Domain":"www.monsterworksdemo.com","ServiceUrl":"services.lexus.monster.com"}, 'localStorage');
+                    }
+                };
+            }]);
+        })(angular);
+    </script>
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://securemedia.newjobs.com/id/mgs/10338/favicon.ico">
+</head>
+<!--                                                                  ________________      -->
+<!-- ________________________________________________________________/   HTML Body    \_____-->
+<body ng-class="{'side-menu-on':sideMenu.open, 'side-search-on': search.open}">
+    <ocs-sidemenu ng-if="$root.registry.localStore.global.context.ChannelAlias === 'MGSMIL'" shifting-class=".shift-body-wrapper" menu-logged="meta.menuLogged" menu-items="meta.nav1" menu-trigger="sideMenu.open"></ocs-sidemenu>
+
+    <div class="visible-xs-block">
+        <ng-include src="'/UI/shared/search-panel.html'"></ng-include>
+    </div>
+
+
+    <div class="body-inner" ng-init="sideMenu = {}" ng-class="{'shift-body-wrapper': sideMenu.open, 'shift-body-wrapper-left': search.open}">
+        <a href="" tabindex="0" ng-click="$root.gotoAnchor('main-content')" class="sr-only">Skip to main content</a>
+        <a href="" tabindex="0" ng-click="$root.gotoAnchor('main-navigation')" class="sr-only">Skip to navigation</a>
+
+        <!-- sitewide alert banner -->
+        <ocs-error ng-if="$root.msg(347957) &amp;&amp; $root.registry.localStore.global.context.ChannelAlias !== 'MGSMIL'" error-list="[{ type: 'alert-danger', text: $root.msg(347957)}]" remove-close="true"></ocs-error>
+
+        <div ng-class="{'container': $root.registry.localStore.global.context.ChannelAlias !== 'MGSMIL'}">
+
+            <!-- cms Edit Bar -->
+            <ng-include src="'/UI/shared/cmsEditBar.html'" ng-if="registry.localStore.global.cmsEditMode == true"></ng-include>
+
+            <!-- header -->
+            <ng-include src="configLayout.header.url.lookUpConfig.value" ng-if="configLayout.header.show.lookUpConfig.value"></ng-include>
+
+            
+
+            <ng-include src="configLayout.header2.url.lookUpConfig.value" ng-if="configLayout.header2.show.lookUpConfig.value"></ng-include>
+			<!-- mgsmil jobview ad-->
+			<div id="mgsmil-jobview-ad" class="container ad-wrapper" ng-if="$root.registry.localStore.global.context.ChannelAlias === 'MGSMIL' &amp;&amp; configLayout.showJobviewAd &amp;&amp; configLayout.isJobviewPage">
+				<div id="MIL_12935777_DIV_ID_1" class="app-nexus-ad"></div>
+			</div>
+        </div>
+        <div id="search-panel" class="container hidden-xs">
+            <!-- Search Bar -->
+            <ng-include src="'/UI/shared/search-panel.html'"></ng-include>
+        </div>
+
+
+        <div class="body-wrapper">
+            <ocs-alert></ocs-alert>
+
+            <div class="container">
+                <!-- this is the 404 and 401 error message-->
+                <div class="row" ng-if="$root.topErrorList.length">
+                    <ng-include src="'/UI/shared/error.html'"></ng-include>
+                </div>
+
+                <div ng-if="!$root.topErrorList.length">
+
+                    <!-- Apply flow check -->
+                    <ocs-apply-notify meta="meta.jobApply"></ocs-apply-notify>
+
+                    <!-- in page errors -->
+                    <ocs-page-errors error-list="$root.topMasterErrors"></ocs-page-errors>
+
+                    <!-- Content -->
+                    <div class="row">
+                        <div class="col-lg-12 content-wrapper" id="main-content">
+
+                            <ocs-bread-crumbs meta="meta.breadCrumbsExtended" ng-if="!meta.breadCrumbExtended.disable"></ocs-bread-crumbs>
+                            <div ocs-spinner="" is-loaded="$root.isLoaded" options="{top: '100px', minHeight: '300px'}">
+                                <div ng-if="$root.isLoaded">
+                                    
+
+
+<div ng-view=""></div>
+
+<!-- For bootstrap carousel we need to update the Bootstrap version we use -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="https://core.ui.lexus.monster.com/lib/bootstrap-accessibility/bootstrap-accessibility.min.js"></script>
+<!-- <script src="https://core.ui.lexus.monster.com/lib/carousel-swipe/carousel-swipe.js"></script> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-bg" ng-if="configLayout.footer.show.lookUpConfig.value">
+                        <ng-include src="configLayout.footer.url.lookUpConfig.value" ng-if="configLayout.footer.show.lookUpConfig.value"></ng-include>
+                </div>
+            </div>
+            <div class="footer-bg" ng-if="configLayout.footer2.show.lookUpConfig.value">
+                <ng-include src="configLayout.footer2.url.lookUpConfig.value" ng-if="configLayout.footer2.show.lookUpConfig.value"></ng-include>
+            </div>
+        </div>
+    </div>
+    <ng-include src="'/UI/shared/login-modal.html'"></ng-include>
+
+
+</body></html>

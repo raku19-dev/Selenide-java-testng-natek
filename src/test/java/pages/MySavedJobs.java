@@ -9,7 +9,7 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.actions;
 
 public class MySavedJobs {
-    public void openMySavedJob(){
+    public void mySavedJobs(){
         SelenideElement element = $(byLinkText("My Job Search"));
         actions().moveToElement(element).perform();
         $(byLinkText("Saved Jobs")).click();
