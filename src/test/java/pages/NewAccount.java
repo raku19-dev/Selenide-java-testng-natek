@@ -26,7 +26,7 @@ public class NewAccount {
         $(byId("elem_3")).selectOption(jobCenter);
     }
 
-    public void checkTermsCondition(boolean termsCondition)    {
+    public void checkTermsCondition()    {
         $(byXpath("//span[@class='checkbox-custom checkbox-toggle']")).click();
     }
 
@@ -34,13 +34,12 @@ public class NewAccount {
         $(byText("Create an account")).click();
     }
 
-    public void fillTheFormAndCreate(String eMail, String password, String confirmPassword, String jobCenter,
-                                     boolean termsConditions)    {
+    public void fillTheFormAndCreate(String eMail, String password, String confirmPassword, String jobCenter)    {
         enterEmail(eMail);
         enterPassword(password);
         confirmPassword(confirmPassword);
         selectJobCorpsCenter(jobCenter);
-        checkTermsCondition(termsConditions);
+        checkTermsCondition();
         clickCreateAnAccount();
     }
 

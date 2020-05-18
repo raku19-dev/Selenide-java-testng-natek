@@ -11,8 +11,6 @@ import pages.HomePage;
 import pages.JobSearchResults;
 import pages.MySavedJobs;
 
-import java.util.concurrent.TimeoutException;
-
 import static com.codeborne.selenide.Selectors.byId;
 import static com.codeborne.selenide.Selenide.*;
 
@@ -32,7 +30,7 @@ public class TestClass {
   }
 
   @Test
-  public void SimpleTest() throws TimeoutException {
+  public void SimpleTest() {
 
     String regex = "\\w{10}\\@gmail\\.com";
     String eMail = new Generex(regex).random();
@@ -44,7 +42,8 @@ public class TestClass {
 
     HomePage homePage = new HomePage();
     homePage.createAccount().fillTheFormAndCreate
-            (eMail, password, password, jobCenter, true);
+            (eMail, password, password, jobCenter);
+    homePage.verifyIfUserIsLoggedIn();
 
     Dashboard dashBoard = new Dashboard();
     dashBoard.openLinkText("Philips Jobs");

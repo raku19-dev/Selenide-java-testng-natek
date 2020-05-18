@@ -15,14 +15,6 @@ public class MySavedJobs {
         $(byLinkText("Saved Jobs")).click();
     }
 
-    public int currentlySavedJobs(){
-        return Integer.parseInt(String.valueOf($(byXpath("//strong[@class='ng-binding ng-scope']"))));
-    }
-
-    public int possibleSavedJobs(){
-        return Integer.parseInt(String.valueOf($(byXpath("//strong[@class='ng-binding']"))));
-    }
-
     public void correctNumberOfSavedAndPossibleSavedJobsDisplayed(double savedJobs, double noPossibleSavedJobs){
         $(byXpath("//div[@class='alert alert-info ng-binding']")).
                 shouldHave(Condition.exactText("You have saved "+(int) savedJobs+" of "+(int) noPossibleSavedJobs+" possible jobs."));

@@ -14,10 +14,10 @@ public class JobSearchResults {
 
     public void openSpecificJobOffer(int index) {
 
-        double page = Math.ceil(Double.valueOf(index)/Double.parseDouble(getResultsPerPage()));
+        double page = Math.ceil(index/Double.parseDouble(getResultsPerPage()));
         open("https://browse.monsterworksdemo.com/search/?cn=Philips&stpage=1&page=" + ((int) page));
 
-        double indexOnPage = Double.valueOf(index)%Double.parseDouble(getResultsPerPage());
+        double indexOnPage = index%Double.parseDouble(getResultsPerPage());
         indexOnPage--; //index on page starts from 0, that is -1 is needed
         $$(byXpath("//div[@id='SearchResults']/section[contains(@class,'card-content')]")).get((int) indexOnPage).click();
     }
