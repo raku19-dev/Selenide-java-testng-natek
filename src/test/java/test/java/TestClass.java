@@ -1,6 +1,7 @@
 package test.java;
 
 import com.codeborne.selenide.Condition;
+import com.mifmif.common.regex.Generex;
 import org.apache.log4j.BasicConfigurator;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -33,7 +34,8 @@ public class TestClass {
   @Test
   public void SimpleTest() throws TimeoutException {
 
-    String eMail = "tst@gmail.cad";
+    String regex = "\\w{10}\\@gmail\\.com";
+    String eMail = new Generex(regex).random();
     String password = "@W3e4r5t";
     String jobCenter = "To edit the items in here change messages 389442-389565";
 
